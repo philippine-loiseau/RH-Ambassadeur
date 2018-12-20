@@ -1,0 +1,269 @@
+header {
+	background-color: transparent;
+}
+
+nav {
+	display: inline-block;
+	line-height: 48px;
+	vertical-align: top;
+	margin-top: 73px;
+}
+
+button:focus {
+	border: none;
+	outline: none;
+}
+
+.item-nav {
+	font-family: FD_Regular;
+	font-size: 18px;
+	text-align: right;
+	color: white;
+	text-decoration: none;
+}
+
+.item-nav:hover {
+	color: white;
+}
+/* SEARCH BAR AND MEDIA ICON  */
+
+input#search-bar {
+	margin: 0 auto;
+	width: 214px;
+	height: 44px;
+	padding: 0 20px;
+	font-size: 16px;
+	font-family: FD_Regular;
+	color: black;
+	background-color: #f2f2f2;
+	border: 1px solid #f2f2f2;
+	outline: none;
+}
+input#search-bar:focus {
+	transition: 0.35s ease;
+	color: black;
+}
+input#search-bar:focus::-webkit-input-placeholder {
+	transition: opacity 0.45s ease;
+	opacity: 0;
+}
+input#search-bar:focus::-moz-placeholder {
+	transition: opacity 0.45s ease;
+	opacity: 0;
+}
+input#search-bar:focus:-ms-placeholder {
+	transition: opacity 0.45s ease;
+	opacity: 0;
+}
+
+.search-icon {
+	position: relative;
+	float: right;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	width: 30px;
+	height: 44px;
+	text-align: center;
+	background-color: #f2f2f2;
+}
+
+.media-icon {
+	position: relative;
+	float: right;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	width: 44px;
+	height: 44px;
+	text-align: center;
+	background-color: #ffffff;
+}
+
+.media-icon#twitter {
+	color: #1da1f2;
+}
+
+.media-icon#linkedin {
+	color: #0077b5;
+}
+
+.signin {
+	position: relative;
+	float: right;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	width: 116px;
+	height: 44px;
+	text-align: center;
+	font-family: FD_Regular;
+	font-size: 16px;
+	text-align: center;
+	color: #ffffff;
+	color: white;
+	background-color: #333333;
+}
+
+.container-fluid#search-media {
+	padding-right: 140px !important;
+}
+
+.button-offers {
+	width: 179px;
+	background-color: #ffffff;
+	font-family: FD_Regular;
+	font-size: 18px;
+	color: #0066ff;
+	border: none;
+	outline: none;
+}
+
+#hamburger,
+#hamburger-content {
+	display: inline;
+}
+
+#hamburger-button {
+	display: none;
+	cursor: pointer;
+	background: none;
+	border: none;
+	font-size: 30px;
+	vertical-align: top;
+	padding: 0;
+	line-height: 47px;
+	float: right;
+	margin-right: 15px;
+}
+
+#hamburger-overlay {
+	display: none;
+	position: fixed;
+	z-index: 10;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+#hamburger-sidebar {
+	display: none;
+	position: fixed;
+	width: 84%;
+	z-index: 20;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: black;
+	overflow-y: auto;
+	transform: translateX(-100%);
+	transition: transform 0.2s ease-out;
+}
+#hamburger-sidebar li {
+	display: block;
+}
+#hamburger-sidebar-header {
+	background: url(../images/sidebar-header.png) center;
+	background-size: cover;
+}
+
+#hamburger-sidebar-body {
+	padding: 16px 8px;
+}
+
+#hamburger-sidebar-body {
+	margin-top: 16px;
+	text-align: center;
+	float: none;
+	display: block;
+	height: auto;
+	line-height: inherit;
+	padding: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+	h1 {
+		font-size: 42px;
+		line-height: 56px;
+	}
+
+	header {
+		padding: 16px 0 16px 32px;
+	}
+
+	#hamburger-content {
+		display: none;
+	}
+
+	#hamburger-button,
+	#hamburger-sidebar,
+	.hamburger-activated #hamburger-overlay {
+		display: block;
+		color: white;
+	}
+
+	.hamburger-activated #hamburger-sidebar {
+		transform: translateX(0);
+    }
+    .container-fluid#search-media {
+		padding-right: 0px !important;
+		justify-content: center !important;
+	}
+	input#search-bar {
+		width: 202px;
+		font-size: 15px;
+	}
+	nav {
+		margin-top: 0px !important;
+	}
+	.item-nav {
+		text-align: left !important;
+	}
+	a#logo-hamburger-menu {
+		content: url('../img/logo_niji.png');
+		width: 155px;
+	}
+	img#logo {
+		display: none;
+	}
+	li#logo:first-child {
+		padding: 0;
+		margin-top: 35px;
+	}
+	ul#nav {
+		display: grid;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	li#logo {
+		margin-left: 80px;
+	}
+}
+
+@media screen and (max-width: 1030px) and (max-width: 1550px) {
+	li#link1 {
+		padding-left: 10px;
+	}
+}
+
+@media screen and (min-width: 1600px) {
+	li#logo {
+		margin-left: 80px;
+	}
+	li#link1 {
+		padding-left: 107px;
+	}
+}
+
+
+@media screen and (min-width: 1650px) {
+	li#logo {
+		margin-left: 80px;
+	}
+	li#link1 {
+		padding-left: 333px;
+	}
+}
