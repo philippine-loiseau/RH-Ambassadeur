@@ -8,6 +8,10 @@ body {
 	background-color: linear-gradient(to bottom, rgba(51, 51, 51, 0), var(--black));
 }
 
+section#background {
+	
+}
+
 /* SECTION 1 */
 
 section#main {
@@ -70,8 +74,8 @@ h2 {
 		margin-top: 60px;
 	}
 	h2 {
-    font-size: 25px;
-    margin-left: 20px;
+		font-size: 25px;
+		margin-left: 20px;
 	}
 }
 
@@ -188,19 +192,19 @@ section#debate {
 	margin-top: 60px;
 }
 
+div#debate {
+	align-items: flex-start !important;
+}
+
 .card-debate {
 	background-color: white;
-	height: auto;
 	width: 260px;
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 	margin: 40px 40px 40px 10px;
-	/* display: inline-block; */
+
 	border-radius: 3px;
 	position: relative;
-	/* display: inline-block; */
-	height: auto;
-	/* width: auto; */
-	float: left;
+	display: inline-block;
 }
 .card-head {
 	text-transform: uppercase;
@@ -274,6 +278,9 @@ span#bold {
 	}
 	.card-head {
 		margin-right: 80px;
+	}
+	.row#debate {
+		justify-content: center !important;
 	}
 }
 
@@ -418,6 +425,7 @@ a#facebook {
 	display: inline-block;
 	height: 34px;
 	width: 20px;
+	margin-bottom: 10px;
 }
 
 a#twitter {
@@ -428,6 +436,7 @@ a#twitter {
 	display: inline-block;
 	height: 34px;
 	width: 20px;
+	margin-bottom: 10px;
 }
 
 a#slideshare {
@@ -448,6 +457,7 @@ a#youtube {
 	display: inline-block;
 	height: 34px;
 	width: 20px;
+	margin-bottom: 10px;
 }
 
 a#linkedin {
@@ -458,6 +468,7 @@ a#linkedin {
 	display: inline-block;
 	height: 34px;
 	width: 20px;
+	margin-bottom: 10px;
 }
 a#mail {
 	background-image: url('../img/social/mail.png');
@@ -472,6 +483,7 @@ a#mail {
 	font-family: GothamHTF;
 	font-size: 10px;
 	padding-left: 40px;
+	margin-bottom: 10px;
 }
 
 a#padlock {
@@ -494,7 +506,7 @@ a#padlock {
 }
 
 div#social-media {
-	padding-top: 50px !important;
+	padding-top: 30px !important;
 }
 
 .copyright {
@@ -529,22 +541,26 @@ p#legal {
 
 @media screen and (max-width: 425px) {
 	section#footer {
-    padding-left: 20px;
-  }
-  a#mail, a#padlock {
-    margin-top: 20px;
-  }
-  .copyright {
-    padding-left: 0px;
-    margin-top: 20px;
-  }
+		padding-left: 20px;
+	}
+	a#mail,
+	a#padlock {
+		margin-top: 20px;
+	}
+	.copyright {
+		padding-left: 0px;
+		margin-top: 20px;
+	}
+	.marque-bretagne {
+		display: none;
+	}
 }
 @media screen and (min-width: 430px) and (max-width: 770px) {
-  .contact {
-    max-width: 22.666667% !important;
-  }
-  .copyright {
-    max-width: 28.333333% !important;
-    height: 0px;
-  }
+	.contact {
+		max-width: 22.666667% !important;
+	}
+	.copyright {
+		max-width: 28.333333% !important;
+		height: 0px;
+	}
 }
