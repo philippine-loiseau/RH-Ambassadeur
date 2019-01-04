@@ -382,6 +382,8 @@ p#find-us {
 	font-family: FD_Light;
 	font-size: 22px;
 	color: #0066ff;
+	margin-top: 40px;
+	margin-bottom: 30px;
 }
 button#map {
 	border-radius: 15px;
@@ -484,6 +486,7 @@ a#mail {
 	font-size: 10px;
 	padding-left: 40px;
 	margin-bottom: 10px;
+	position: absolute;
 }
 
 a#padlock {
@@ -507,6 +510,7 @@ a#padlock {
 
 div#social-media {
 	padding-top: 30px !important;
+	text-align: center
 }
 
 .copyright {
@@ -534,22 +538,22 @@ a#plan {
 
 p#legal {
 	margin-bottom: 0px !important;
-	text-align: start;
+	text-align: center;
 }
 
 /* MEDIA QUERIES SECTION FOOTER */
 
-@media screen and (max-width: 425px) {
+
+@media screen and (max-width: 425px){
 	section#footer {
-		padding-left: 20px;
+		padding-left: 25px
 	}
-	a#mail,
-	a#padlock {
-		margin-top: 20px;
+	div#footer-row {
+		margin-right: 0px !important;
+		margin-left: 0px !important
 	}
-	.copyright {
-		padding-left: 0px;
-		margin-top: 20px;
+	p#find-us {
+		font-size: 18px
 	}
 	.marque-bretagne {
 		display: none;
@@ -558,9 +562,5 @@ p#legal {
 @media screen and (min-width: 430px) and (max-width: 770px) {
 	.contact {
 		max-width: 22.666667% !important;
-	}
-	.copyright {
-		max-width: 28.333333% !important;
-		height: 0px;
 	}
 }
