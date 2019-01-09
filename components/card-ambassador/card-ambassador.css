@@ -1,0 +1,112 @@
+@import url('../../assets/css/fonts.css');
+
+.card-ambassador {
+    width: 360px;
+    height: 170px;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.3), 0 0 4px 0 rgba(0, 0, 0, 0.3);
+    background-color: #ffffff;
+    display: inline-block;
+    position: relative;
+}
+
+.circle-ambassador {
+    width: 100px;
+    height: 100px;
+    background-color: #bbb;
+	border-radius: 50%;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.name-ambassador {
+    left: 150px;
+    top: 0px;
+    position: absolute;
+    font-family: FD_Regular;
+    font-size: 32px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+}
+
+.line-ambassador {
+    width: 100px;
+    height: 1px;
+    background-color: #0066ff;
+    position: absolute;
+    left: 150px;
+    top: 73px;
+}
+
+.job-ambassador {
+    font-family: GothamHTF;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+    position: absolute;
+    left: 150px;
+    top: 70px;
+}
+
+.from-ambassador {
+    position: absolute;
+    left: 150px;
+    font-family: FD_Regular;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #0066ff;
+    top: 87px;
+}
+
+.ask-question {
+    font-family: GothamHTF;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.43;
+    letter-spacing: normal;
+    color: #0066ff;
+    position: absolute;
+    text-decoration: none;
+    top: 135px;
+    left: 25px;
+}
+
+.see-profile {
+    font-family: GothamHTF;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: #000000;
+    text-decoration: none;
+    position: absolute;
+    top: 145px;
+    left: 235px;
+}
+
+.arrow-profile {
+    width: 16.6px;
+    height: 12px;
+}
+
+.card-ambassador:hover {
+    border: 0.5px #0066ff solid;
+    box-shadow: 0 15px 14px 0 rgba(0, 0, 0, 0.1), 0 0 4px 0 rgba(0, 0, 0, 0.3);
+}

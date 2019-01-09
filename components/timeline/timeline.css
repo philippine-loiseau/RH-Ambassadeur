@@ -1,0 +1,56 @@
+@import url('../../assets/css/fonts.css');
+
+.card-timeline {
+    width: 320px;
+    height: 58px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
+    background-color: #ffffff;
+    margin-left: 50px;
+    padding-left: 20px;
+}
+
+.title-timeline {
+    font-family: GothamHTF;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #0066ff;
+    margin-top: 9px;
+}
+
+.subtitle-timeline {
+    font-family: GothamHTF;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: black;
+}
+
+.line {
+    border-left: 1px dashed #0066ff;
+    padding-top: 30px;
+    margin-left: 16px;
+    position: relative;
+}
+
+.line:before,
+.line:after {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    top: 0;
+    left: -12px;
+    content: '';
+    border-radius: 50%;
+    border: 1px solid #0066ff;
+}
+.line:last-child {
+    border-left-color: rgba(0, 0, 0, 0);
+}

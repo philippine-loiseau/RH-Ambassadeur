@@ -12,10 +12,10 @@
     line-height: normal;
     letter-spacing: normal;
     text-align: center;
-    color: #2807b1;
+    color: white;
     padding-top: 13px;
     padding-bottom: 13px;
-    border: 1px solid #2807b1;
+    border: 1px solid white;
 }
 
 .cta-outline-white:focus {
