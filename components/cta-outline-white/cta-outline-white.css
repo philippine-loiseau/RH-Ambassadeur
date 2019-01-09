@@ -1,0 +1,23 @@
+@import url('../../assets/css/fonts.css');
+
+.cta-outline-white {
+    width: 230px;
+    height: 44.9px;
+    background-color: transparent;
+    font-family: FD_Medium;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #2807b1;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border: 1px solid #2807b1;
+}
+
+.cta-outline-white:focus {
+    outline: none;
+}

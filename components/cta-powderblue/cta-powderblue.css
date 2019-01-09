@@ -1,0 +1,23 @@
+@import url('../../assets/css/fonts.css');
+
+.cta-powderblue {
+    width: 230px;
+    height: 44.9px;
+    background-color: #c9defe;
+    font-family: FD_Medium;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #0066ff;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border: none;
+}
+
+.cta-powderblue:focus {
+    outline: none;
+}

@@ -1,0 +1,20 @@
+@import url('../../assets/css/fonts.css');
+
+.neutral {
+    width: 820px;
+    height: 50px;
+    background: url(../../assets/img/icon/information.png) no-repeat 20px 9px #d7e0e2;
+}
+
+.text-neutral {
+    font-family: GothamHTF;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.86;
+    letter-spacing: normal;
+    color: black;
+    padding-top: 12px;
+    padding-left: 70px;
+}

@@ -1,0 +1,20 @@
+@import url('../../assets/css/fonts.css');
+
+.success {
+    width: 820px;
+    height: 50px;
+    background: no-repeat 7px 7px #09bea0;
+}
+
+.text-success {
+    font-family: GothamHTF;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.86;
+    letter-spacing: normal;
+    color: #ffffff;
+    padding-top: 12px;
+    padding-left: 70px;
+}

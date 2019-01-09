@@ -22,4 +22,4 @@
 		numberOfMonths: 2,
 		showButtonPanel: true
     });
-  } );
+});
