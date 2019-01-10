@@ -1,0 +1,75 @@
+@import url('../../assets/css/fonts.css');
+
+.dataTables_length {
+  display: none;
+}
+
+.dataTables_info {
+  display: none;
+}
+
+th {
+  border-bottom: 1px solid #0066ff !important;
+  font-family: GothamHTF;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #999999;
+}
+
+table.dataTable thead>tr>th:active {
+  font-weight: bold;
+}
+
+td {
+  font-family: GothamHTF;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  padding: 19px !important;
+}
+
+.page-link { 
+  border: none !important;
+  color: black !important;
+  background-color: transparent !important;
+  font-family: GothamHTF;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+
+ul.pagination {
+  justify-content: start !important;
+}
+
+.page-link:focus {
+  color: #0066ff !important;
+  box-shadow: none !important;
+  font-weight: bold !important;
+  text-decoration-line: underline;
+}
+
+.button-mail {
+  background: url('../../assets/img/icon/mail-1-copy.png') no-repeat;
+  width: 30px;
+  height: 18px;
+  text-align: center;
+  outline: none;
+  border: none;
+}
+
+.td-center {
+  text-align: center;
+}
