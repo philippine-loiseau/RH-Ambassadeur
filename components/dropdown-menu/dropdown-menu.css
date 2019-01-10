@@ -1,0 +1,64 @@
+@import url('../../assets/css/fonts.css');
+
+
+
+.stylish-dropdown {
+	position: relative;
+	width: 240px;
+	height: 40px;
+	font-family: GothamHTF;
+	font-size: 14px;
+	font-weight: 700;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.86;
+	letter-spacing: normal;
+	color: black;
+    clear: both;
+    border:0px;
+    outline:0px;
+}
+.stylish-dropdown:after {
+	content: "";
+	box-sizing: border-box;
+    display: block;
+    width: 35px;
+	position: absolute;
+	right: 1px;
+	top: 1px;
+	bottom: 1px;
+	z-index: 3;
+	pointer-events: none;
+    background: #d7e0e2 url(../../assets/img/icon/icn-dropdown.png) no-repeat center center;
+    overflow: auto;
+}
+
+
+.stylish-dropdown:hover:after {
+    background-color: #0066ff;
+}
+
+
+.stylish-dropdown select {
+	position: relative;
+	padding: 0 1em;
+	width: 100%;
+	height: 100%;
+	background: #d7e0e2;
+	cursor: pointer;
+	z-index: 3;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+    appearance: none;
+    border:0px;
+    outline:0px;
+
+}
+
+
+.stylish-dropdown select:hover {
+    background: #0066ff;
+    color: white;
+    border:0px;
+    outline:0px;
+}
