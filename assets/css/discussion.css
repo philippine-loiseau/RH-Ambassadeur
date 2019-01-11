@@ -795,7 +795,7 @@ div#ul-option {
 	font-stretch: normal;
 	line-height: 1.71;
 	letter-spacing: 0.2px;
-	color: var(--black);
+	color: black;
 }
 
 div#row-check {
@@ -803,8 +803,6 @@ div#row-check {
 	margin-right: 15px !important;
 	margin-top: 28px;
 }
-
-
 
 .fence {
 	font-family: GothamHTF;
@@ -861,9 +859,9 @@ div#row-check {
 /* checked mark aspect */
 [type="checkbox"]:not(:checked) + label:after,
 [type="checkbox"]:checked + label:after {
-	content: '\2713\0020';
+	content: url('../img/icon/checkbox-on.png');
 	position: absolute;
-	top: .25em; left: .22em;
+	top: 4px; left: 3px;
 	font-size: 1.80em;
 	line-height: 0.8;
 	color: #0066ff;
