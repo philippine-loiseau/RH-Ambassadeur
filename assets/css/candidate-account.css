@@ -7,7 +7,7 @@ section#profile-candidate {
 }
 
 .main-profile-candidate {
-	padding-left: 60px;
+    padding-left: 60px;
 	width: 1115px;
 	height: auto;
 	background-color: #ffffff;
@@ -49,7 +49,8 @@ section#profile-candidate {
     width: 990px;
 	height: auto;
     background-color: lightgrey;
-	display: inline-block;
+    display: inline-block;
+    padding-bottom: 30px;
 }
 
 .input-fields {
@@ -75,6 +76,30 @@ section#profile-candidate {
     letter-spacing: normal;
     color: black;
 }
+
+.area {
+	margin-left: 75px;
+}
+
+.text-area {
+	font-family: GothamHTF;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.86;
+	letter-spacing: normal;
+	color: #000000;
+	padding-top: 15px;
+	border: none;
+	overflow: auto;
+	outline: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+    box-shadow: none;
+    width: 800Px;
+}
+
 
 .cta-grey {
     margin-top: 0px !important;
@@ -122,6 +147,7 @@ section#profile-candidate {
 }
 
 
+
 [type="checkbox"]:not(:checked) + label:after, [type="checkbox"]:checked + label:after { 
     top: 2px !important;
     left: 4px !important;
@@ -130,4 +156,9 @@ section#profile-candidate {
 [type="checkbox"]:not(:checked) + label:before,
 [type="checkbox"]:checked + label:before  {
     border: 2px solid white !important;
+}
+
+.submit-question {
+    margin-left: 130px;
+    margin-top: 30px;
 }

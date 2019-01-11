@@ -744,6 +744,10 @@ section#area {
 	display: none;
 }
 
+.area {
+	margin-left: 75px;
+}
+
 .text-area {
 	font-family: GothamHTF;
 	font-size: 14px;

@@ -31,8 +31,9 @@
     <link href="../assets/css/hamburger-menu.css" rel="stylesheet" />
     <link href="../assets/css/styles.css" rel="stylesheet" />
     <link href="../assets/css/fonts.css" rel="stylesheet" />
-</head>
-<section id="background">
+    <script src="../assets/js/show-question.js"></script>
+    <section id="background">
+    </head>
     <header>
         <a href="#" id="logo-hamburger-menu"></a>
         <div id="hamburger">
@@ -99,8 +100,8 @@
                 <div class="ask-question">
                     <form class="form-ask">
                         <label class="label-ask">Votre question : </label>
-                        <input class="input-fields" type="text" min="5" required>
-                        <div class="view-form">
+                        <input onclick="toggle('view-form')" class="input-fields" type="text" min="5" required>
+                        <div id="view-form" class="view-form">
                             <div class="row-custom ask-who">
                                 <label id="ask-who" class="label-ask">Posée à : </label>
                                 <div class="stylish-dropdown">
@@ -130,12 +131,23 @@
                                     </select>
                                 </div>
                             </div>
-                        </div>                        
-                    </form>
+                            <div class="row-custom ask-who">
+                                <label id="ask-who" class="label-ask">Details :</label>
+                                <div class="area">
+                                    <textarea rows="5" class="form-control text-area" placeholder="Ecrivez votre message..."></textarea>
+                                </div>
+                            </div>
+                            <div class="submit-question">
+                                <button class="cta-brightblue">
+                                    Envoyer la question
+                                </button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
-        
-        
-    </body>
-</section>
+    </section>
+    
+    
+</body>
