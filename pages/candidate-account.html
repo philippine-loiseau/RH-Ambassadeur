@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="../assets/img/favicon.ico" />
+    
+    <title>RH - Ambassadeur</title>
+    <!-- FontAwesome 5.6.1 -->
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+    integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+    crossorigin="anonymous"
+    />
+    
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    
+    <!-- Custom styles -->
+    <link href="../assets/css/home-page.css" rel="stylesheet" />
+    <link href="../assets/css/candidate-account.css" rel="stylesheet" />
+    <link href="../components/cta-brightblue/cta-brightblue.css" rel="stylesheet" />
+    <link href="../components/cta-grey/cta-grey.css" rel="stylesheet" />
+    <link href="../components/input-fields/input-fields.css" rel="stylesheet" />
+    <link href="../components/checkbox/checkbox.css" rel="stylesheet" />
+    <link href="../components/dropdown-menu/dropdown-menu.css" rel="stylesheet" />
+    <link href="../assets/css/hamburger-menu.css" rel="stylesheet" />
+    <link href="../assets/css/styles.css" rel="stylesheet" />
+    <link href="../assets/css/fonts.css" rel="stylesheet" />
+</head>
+<section id="background">
+    <header>
+        <a href="#" id="logo-hamburger-menu"></a>
+        <div id="hamburger">
+            <div id="hamburger-content">
+                <form class="container-fluid row justify-content-end" id="search-media">
+                    <div>
+                        <input
+                        type="text"
+                        id="search-bar"
+                        placeholder="&quot;mobilité&quot; ou &quot;valeurs de Niji&quot;"
+                        />
+                        <button type="submit" class="search-icon"><i class="fas fa-search"></i></button>
+                    </div>
+                    <div>
+                        <button type="submit" class="media-icon" id="twitter"><i class="fab fa-twitter"></i></button>
+                    </div>
+                    <div>
+                        <button type="submit" class="media-icon" id="linkedin">
+                            <i class="fab fa-linkedin-in"></i>
+                        </button>
+                    </div>
+                    <div><button type="submit" class="signin">Mon compte</button></div>
+                </form>
+                <nav class="row container-fluid">
+                    <ul class="nav col-md-12 col-lg-12 col-xl-12" id="nav">
+                        <li id="logo" class="nav-item col-md-6 col-lg-6 col-xl-4">
+                            <img id="logo" src="../assets/img/logo_niji.png" alt="Logo Niji" />
+                        </li>
+                        <li id="link1" class="nav-item col-md-auto">
+                            <a class="nav-link item-nav" href="#">Les discussions</a>
+                        </li>
+                        <li class="nav-item col-md-auto"><a class="nav-link item-nav" href="#">Les ambassadeurs</a></li>
+                        <li class="nav-item col-md-auto">
+                            <a class="nav-link item-nav" href="#">#YaDeLaVieChezNiji</a>
+                        </li>
+                        <li class="nav-item col-md-auto">
+                            <button type="submit" class="button-offers">Nos offres d'emploi</button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <button id="hamburger-button">&#9776;</button>
+            <div id="hamburger-sidebar">
+                <div id="hamburger-sidebar-header"></div>
+                <div id="hamburger-sidebar-body"></div>
+            </div>
+            <div id="hamburger-overlay"></div>
+        </div>
+    </header>  
+    <body>
+        
+        <section id="profile-candidate">
+            <div class="main-profile-candidate">
+                <div class="row-custom">
+                    <img class="circle-candidate"/>
+                    <p class="name-candidate">Sophie L.</p>
+                </div>
+                
+                <div class="update-profile">
+                    <button class="cta-brightblue">
+                        Modifier mon compte
+                    </button>
+                </div>
+                <div class="ask-question">
+                    <form class="form-ask">
+                        <label class="label-ask">Votre question : </label>
+                        <input class="input-fields" type="text" min="5" required>
+                        <div class="view-form">
+                            <div class="row-custom ask-who">
+                                <label id="ask-who" class="label-ask">Posée à : </label>
+                                <div class="stylish-dropdown">
+                                    <select>
+                                        <option value="0">Toutes les expertises</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="row-custom ask-who">
+                                <label id="ask-who" class="label-ask">Visible :</label>
+                                <div class="check-visible">
+                                    <input type="checkbox" id="test1" />
+                                    <label class="fence" for="test1">uniquement par cette ambassadeur</label>
+                                </div>
+                                <div id="second" class="check-visible">
+                                    <input type="checkbox" id="test2" />
+                                    <label class="fence" for="test2">par tous une fois ma question validée et qu'un ambassadeur y aura répondu</label>
+                                </div>
+                            </div>
+                            <div class="row-custom theme">
+                                <label class="label-ask">Thématique :</label>
+                                <div id="theme" class="stylish-dropdown">
+                                    <select>
+                                        <option value="0">Toutes les thématiques</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>                        
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+        
+    </body>
+</section>

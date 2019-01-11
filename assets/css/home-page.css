@@ -1,15 +1,12 @@
 @import url('../css/fonts.css');
 
 body {
-	background: url('../img/background.png') no-repeat;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-	background-color: linear-gradient(to bottom, rgba(51, 51, 51, 0), var(--black));
+	background-color: #333333
 }
 
 section#background {
-	
+	background: url('../img/background.png') no-repeat;
+	background-size: cover;
 }
 
 /* SECTION 1 */

@@ -15,12 +15,12 @@
 #page-navi li a {
   float: left;
   display: block;
-  padding: 8px 10px;
+  padding: 4px 2px;
+  margin: 0 4px;
   text-decoration: none;
   background: #fff;
   -webkit-transition: background 200ms linear;
   transition: background 200ms linear;
-  border-radius: 3px;
   font-family: GothamHTF;
   font-size: 14px;
   font-weight: normal;
@@ -44,10 +44,6 @@
   font-weight: bold;
 }
 
-#page-navi li a.current {
-  text-decoration-line: underline;
-}
-
 #page-navi li a.current,
 #page-navi li a.disable,
 #page-navi li a:hover {
@@ -55,4 +51,8 @@
   color: #0066ff;
   border: none;
   font-weight: bold;
+}
+
+#page-navi li a.current {
+  border-bottom: 1px solid #0066ff;
 }

@@ -1,0 +1,133 @@
+@import url('../../assets/css/fonts.css');
+
+
+section#profile-candidate {
+	margin-left: 140px;
+	margin-top: 135px;
+}
+
+.main-profile-candidate {
+	padding-left: 60px;
+	width: 1115px;
+	height: auto;
+	background-color: #ffffff;
+	display: inline-block;
+}
+
+.circle-candidate {
+    width: 130px;
+    height: 130px;
+    background-color: #bbb;
+	border-radius: 50%;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.name-candidate {
+    font-family: FD_Regular;
+    font-size: 32px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+    padding-top: 40px;
+    padding-left: 30px;
+}
+
+.update-profile {
+    position: absolute;
+    top: 457px;
+    left: 380px;
+}
+
+.ask-question {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    width: 990px;
+	height: auto;
+    background-color: lightgrey;
+	display: inline-block;
+}
+
+.input-fields {
+    width: 800px !important;
+    height: 40px !important;
+    background-color: white !important;
+    padding-left: 20px;
+    margin-left: 15px !important;
+}
+
+.form-ask {
+    margin-top: 25px;
+    margin-left: 30px;
+}
+
+.label-ask {
+    font-family: GothamHTF;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.86;
+    letter-spacing: normal;
+    color: black;
+}
+
+.cta-grey {
+    margin-top: 0px !important;
+    padding-top: 11px !important;
+    margin-left: 5px !important;
+    width: 160px !important;
+    height: 40.9px !important;
+}
+
+.ask-who {
+    margin-top: 30px;
+}
+
+.theme {
+    margin-top: 60px;
+}
+
+.stylish-dropdown {
+    width: 500px !important;
+    margin-left: 67px;
+}
+
+.stylish-dropdown#theme {
+    margin-left: 39px;
+}
+
+.label-ask#ask-who {
+    margin-top: 5px;
+}
+
+.check-visible {
+    position: absolute;
+    top: 737px;
+    left: 358px;
+}
+
+.check-visible#second {
+    position: absolute;
+    top: 780px;
+    left: 358px;
+}
+
+.fence {
+    width: 600px !important;
+}
+
+
+[type="checkbox"]:not(:checked) + label:after, [type="checkbox"]:checked + label:after { 
+    top: 2px !important;
+    left: 4px !important;
+}
+
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before  {
+    border: 2px solid white !important;
+}

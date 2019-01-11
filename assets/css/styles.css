@@ -5,3 +5,8 @@
 .blue {
     color:#0066ff;
 }
+
+.row-custom {
+    display: flex;
+    flex-wrap: wrap;
+}

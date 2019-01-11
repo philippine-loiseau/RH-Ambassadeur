@@ -2,6 +2,11 @@
 
 /* SECTION QUESTION */
 
+
+.wrapper {
+	display: flex;
+}
+
 section#question {
 	margin-left: 140px;
 	margin-top: 135px;
@@ -108,7 +113,6 @@ h1#question {
 
 section#answer {
 	margin-left: 140px;
-	margin-right: 60px;
 	box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.15);
 }
 
@@ -212,6 +216,9 @@ div#row-rectangle {
 }
 
 @media screen and (max-width: 325px) {
+	.wrapper {
+		flex-direction: column;
+	}
 	section#answer {
 		margin-left: 30px;
 	}
@@ -557,7 +564,6 @@ img#calendar {
 
 section#reply {
 	margin-left: 125px;
-	margin-right: 60px;
 }
 .main-reply {
 	padding-left: 60px;

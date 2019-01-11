@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="../assets/img/favicon.ico" />
+    
+    <title>RH - Ambassadeur</title>
+    <!-- FontAwesome 5.6.1 -->
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+    integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+    crossorigin="anonymous"
+    />
+    
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    
+    <!-- Custom styles -->
+    <link href="../assets/css/home-page.css" rel="stylesheet" />
+    <link href="../assets/css/search-ambassador.css" rel="stylesheet" />
+    <link href="../components/dropdown-menu/dropdown-menu.css" rel="stylesheet" />
+    <link href="../components/cta-brightblue/cta-brightblue.css" rel="stylesheet" />
+    <link href="../components/cta-outline-brightblue/cta-outline-brightblue.css" rel="stylesheet" />
+    <link href="../assets/css/hamburger-menu.css" rel="stylesheet" />
+    <link href="../assets/css/styles.css" rel="stylesheet" />
+    <link href="../assets/css/fonts.css" rel="stylesheet" />
+</head>
+<section id="background">
+    <header>
+        <a href="#" id="logo-hamburger-menu"></a>
+        <div id="hamburger">
+            <div id="hamburger-content">
+                <form class="container-fluid row justify-content-end" id="search-media">
+                    <div>
+                        <input
+                        type="text"
+                        id="search-bar"
+                        placeholder="&quot;mobilité&quot; ou &quot;valeurs de Niji&quot;"
+                        />
+                        <button type="submit" class="search-icon"><i class="fas fa-search"></i></button>
+                    </div>
+                    <div>
+                        <button type="submit" class="media-icon" id="twitter"><i class="fab fa-twitter"></i></button>
+                    </div>
+                    <div>
+                        <button type="submit" class="media-icon" id="linkedin">
+                            <i class="fab fa-linkedin-in"></i>
+                        </button>
+                    </div>
+                    <div><button type="submit" class="signin">Mon compte</button></div>
+                </form>
+                <nav class="row container-fluid">
+                    <ul class="nav col-md-12 col-lg-12 col-xl-12" id="nav">
+                        <li id="logo" class="nav-item col-md-6 col-lg-6 col-xl-4">
+                            <img id="logo" src="../assets/img/logo_niji.png" alt="Logo Niji" />
+                        </li>
+                        <li id="link1" class="nav-item col-md-auto">
+                            <a class="nav-link item-nav" href="#">Les discussions</a>
+                        </li>
+                        <li class="nav-item col-md-auto"><a class="nav-link item-nav" href="#">Les ambassadeurs</a></li>
+                        <li class="nav-item col-md-auto">
+                            <a class="nav-link item-nav" href="#">#YaDeLaVieChezNiji</a>
+                        </li>
+                        <li class="nav-item col-md-auto">
+                            <button type="submit" class="button-offers">Nos offres d'emploi</button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <button id="hamburger-button">&#9776;</button>
+            <div id="hamburger-sidebar">
+                <div id="hamburger-sidebar-header"></div>
+                <div id="hamburger-sidebar-body"></div>
+            </div>
+            <div id="hamburger-overlay"></div>
+        </div>
+    </header>
+    
+    <body>
+        <section id="search-ambassador" class="row-custom">
+            <h1 class="title-search">Trouvez l'ambassadeur Niji qui vous correspond</h1>
+            <div class="main-search-ambassador">
+                <p class="phrase-search">Je recherche un ambassadeur...</p>
+                <form>
+                    <div class="row-custom">
+                        <p class="phrase-search-2">qui travaille en tant que</p>
+                        <div class="dropdown-search">
+                            <div class="stylish-dropdown">
+                                <select>
+                                    <option value="1">Toutes les expertises</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-custom">
+                        <p class="phrase-search-2">dans les bureaux de </p>
+                        <div class="dropdown-search">
+                            <div class="stylish-dropdown">
+                                <select>                
+                                    <option value="0">Toutes les bureaux</option>
+                                    <option value="1">Bordeaux</option>
+                                    <option value="2">Lille</option>
+                                    <option value="3">Lyon</option>
+                                    <option value="4">Nantes</option>
+                                    <option value="5">Paris</option>
+                                    <option value="6">Rennes</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-custom">
+                        <div class="button-search-amabassador">
+                            <button type="submit" class="cta-brightblue">
+                                Rechercher
+                            </button>
+                        </div>
+                        
+                        <div class="random-search">
+                            <button type="submit" class="cta-outline-brightblue">
+                                Trouver un ambassadeur au hasard
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            
+            <section id="sidebar-ambassador" class="column">
+                
+            </section>
+        </section>
+        
+        
+    </body>
+</section>

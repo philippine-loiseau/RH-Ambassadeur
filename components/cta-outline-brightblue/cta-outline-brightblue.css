@@ -1,7 +1,7 @@
 @import url('../../assets/css/fonts.css');
 
 .cta-outline-brightblue {
-    width: 230px;
+    width: auto;
     height: 44.9px;
     background-color: white;
     font-family: FD_Medium;
@@ -16,6 +16,7 @@
     padding-top: 13px;
     padding-bottom: 13px;
     border: 1px solid #0066ff;
+    display: inline-block
 }
 
 .cta-outline-brightblue:focus {

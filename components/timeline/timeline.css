@@ -3,10 +3,57 @@
 .card-timeline {
     width: 320px;
     height: 58px;
+    position: relative;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
     background-color: #ffffff;
     margin-left: 50px;
     padding-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 5px
+}
+
+.card-timeline::before {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    top: 50%;
+    left: -40px;
+    margin-top: -10px;
+    content: '';
+    border-radius: 50%;
+    border: 1px solid #0066ff;
+    z-index: 1;
+}
+
+.card-timeline:first-child::after {
+    content: '';
+    border-left: 1px dashed #0066ff;
+    position: absolute;
+    top: 50%;
+    bottom: -7px;
+    left: -30px;
+}
+
+
+.card-timeline:last-child::after {
+    content: '';
+    border-left: 1px dashed #0066ff;
+    position: absolute;
+    top: -7px;
+    bottom: 50%;
+    left: -30px;
+}
+
+
+.card-timeline::after {
+    content: '';
+    border-left: 1px dashed #0066ff;
+    position: absolute;
+    top: -10px;
+    bottom: -10px;
+    left: -30px;
 }
 
 .title-timeline {
@@ -30,27 +77,4 @@
     line-height: normal;
     letter-spacing: normal;
     color: black;
-}
-
-.line {
-    border-left: 1px dashed #0066ff;
-    padding-top: 30px;
-    margin-left: 16px;
-    position: relative;
-}
-
-.line:before,
-.line:after {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background: #fff;
-    top: 0;
-    left: -12px;
-    content: '';
-    border-radius: 50%;
-    border: 1px solid #0066ff;
-}
-.line:last-child {
-    border-left-color: rgba(0, 0, 0, 0);
 }
