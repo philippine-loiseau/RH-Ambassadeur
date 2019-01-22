@@ -1,13 +1,24 @@
 @import url('../../assets/css/fonts.css');
 
-
-section#profile-candidate {
+section#profile-candidate  {
 	margin-left: 140px;
-	margin-top: 135px;
+    margin-top: 135px;
+    height: auto;
+    width: auto;
+    display: inline-block;
 }
 
 .main-profile-candidate {
-    padding-left: 60px;
+	padding-left: 60px;
+	width: 1115px;
+	height: auto;
+	background-color: #ffffff;
+	display: inline-block;
+	padding-bottom: 20px;
+}
+
+.main-profile-candidate-visible {
+	padding-left: 60px;
 	width: 1115px;
 	height: auto;
 	background-color: #ffffff;
@@ -15,66 +26,83 @@ section#profile-candidate {
 }
 
 .circle-candidate {
-    width: 130px;
-    height: 130px;
-    background-color: #bbb;
+	width: 130px;
+	height: 130px;
+	background-color: #bbb;
 	border-radius: 50%;
-    display: inline-block;
-    margin-top: 20px;
-    margin-left: 20px;
+	display: inline-block;
+	margin-top: 20px;
+	margin-left: 20px;
 }
 
 .name-candidate {
-    font-family: FD_Regular;
-    font-size: 32px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #000000;
-    padding-top: 40px;
-    padding-left: 30px;
+	font-family: FD_Regular;
+	font-size: 32px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: #000000;
+	padding-top: 40px;
+	padding-left: 30px;
 }
 
 .update-profile {
-    position: absolute;
-    top: 457px;
-    left: 380px;
+	position: absolute;
+	top: 457px;
+	left: 380px;
 }
 
 .ask-question {
-    margin-top: 60px;
-    margin-bottom: 30px;
-    width: 990px;
+	margin-top: 60px;
+	width: 990px;
 	height: auto;
-    background-color: lightgrey;
-    display: inline-block;
-    padding-bottom: 30px;
+	background-color: lightgrey;
+	display: inline-block;
+	padding-bottom: 20px;
 }
 
 .input-fields {
-    width: 800px !important;
-    height: 40px !important;
-    background-color: white !important;
-    padding-left: 20px;
-    margin-left: 15px !important;
+	width: 800px !important;
+	height: 40px !important;
+	background-color: white !important;
+	padding-left: 20px;
+	margin-left: 15px !important;
 }
 
 .form-ask {
-    margin-top: 25px;
-    margin-left: 30px;
+	margin-top: 25px;
+	margin-left: 30px;
+}
+
+.view-form {
+	display: inline-block;
+	height: auto;
+    background-color: white;
+    padding-bottom: 20px;
+    margin-left: 140px;
+}
+
+.hidden-form {
+	padding-left: 30px;
+	background-color: lightgrey;
+	padding-top: 1px;
+	margin-right: 65px;
+	margin-left: 60px;
+    padding-right: 30px;
+    padding-bottom: 20px;
 }
 
 .label-ask {
-    font-family: GothamHTF;
-    font-size: 14px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.86;
-    letter-spacing: normal;
-    color: black;
+	font-family: GothamHTF;
+	font-size: 14px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.86;
+	letter-spacing: normal;
+	color: black;
 }
 
 .area {
@@ -96,69 +124,694 @@ section#profile-candidate {
 	outline: none;
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
-    box-shadow: none;
-    width: 800Px;
+	box-shadow: none;
+	width: 800px;
 }
 
-
 .cta-grey {
-    margin-top: 0px !important;
-    padding-top: 11px !important;
-    margin-left: 5px !important;
-    width: 160px !important;
-    height: 40.9px !important;
+	margin-top: 0px !important;
+	padding-top: 11px !important;
+	margin-left: 5px !important;
+	width: 160px !important;
+	height: 40.9px !important;
 }
 
 .ask-who {
-    margin-top: 30px;
+	margin-top: 13px;
 }
 
 .theme {
-    margin-top: 60px;
+	margin-top: 60px;
 }
 
 .stylish-dropdown {
-    width: 500px !important;
-    margin-left: 67px;
+	width: 500px !important;
+	margin-left: 67px;
 }
 
 .stylish-dropdown#theme {
-    margin-left: 39px;
+	margin-left: 39px;
 }
 
 .label-ask#ask-who {
-    margin-top: 5px;
+	margin-top: 5px;
 }
 
 .check-visible {
-    position: absolute;
-    top: 737px;
-    left: 358px;
+	position: absolute;
+	top: 737px;
+	left: 358px;
 }
 
 .check-visible#second {
-    position: absolute;
-    top: 780px;
-    left: 358px;
+	position: absolute;
+	top: 780px;
+	left: 358px;
 }
 
 .fence {
-    width: 600px !important;
+	width: 600px !important;
 }
 
-
-
-[type="checkbox"]:not(:checked) + label:after, [type="checkbox"]:checked + label:after { 
-    top: 2px !important;
-    left: 4px !important;
+[type='checkbox']:not(:checked) + label:after,
+[type='checkbox']:checked + label:after {
+	top: 2px !important;
+	left: 4px !important;
 }
 
-[type="checkbox"]:not(:checked) + label:before,
-[type="checkbox"]:checked + label:before  {
-    border: 2px solid white !important;
+[type='checkbox']:not(:checked) + label:before,
+[type='checkbox']:checked + label:before {
+	border: 2px solid white !important;
 }
 
 .submit-question {
-    margin-left: 130px;
+	margin-left: 130px;
+	margin-top: 30px;
+}
+
+section#discussion-candidate {
+    margin-left: 140px;
     margin-top: 30px;
+    height: auto;
+    width: auto;
+    display: inline-block;
+}
+
+.main-discussion {
+    width: 1115px;
+    margin-bottom: 30px;
+}
+
+.hr-discussion {
+    background-color: white !important;
+    margin-bottom: 40px;
+}
+.label-discussion {
+    color: white;
+    font-family: GothamHTF;
+    margin-top: 5px;
+}
+
+.card-discussion {
+    background-color: white;
+    height: auto;
+    width: auto;
+    margin-top: 50px;
+    padding: 0px 20px 1px 20px;
+    border-radius: 10px;
+}
+
+.card-discussion-private {
+    background-color: white;
+    height: auto;
+    width: auto;
+    margin-top: 50px;
+    padding: 0px 20px 1px 20px;
+    border-radius: 10px;
+    border: 1px dashed;
+}
+
+.niji-daily {
+    font-family: GothamHTF;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.5;
+    letter-spacing: 0.2px;
+    color: #0066ff;
+    text-transform: uppercase;
+    padding-top: 20px;
+}
+
+.niji-question {
+    font-family: FD_Medium;
+    font-size: 25px;
+}
+
+.niji-posted {
+    font-family: GothamHTF;
+    font-size: 14px;
+}
+
+.niji-response {
+    font-family: GothamHTF;
+    font-size: 14px;
+    margin-left: 735px;
+}
+
+.waiting-response {
+	position: absolute;
+	width: 172px;
+	height: 40px;
+	margin-left: 875px;
+	background-color: #f5a623;
+	font-family: GothamHTF;
+	font-size: 12px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 2.5;
+	letter-spacing: 0.2px;
+	text-align: center;
+	color: #ffffff;
+	padding-top: 5px;
+}
+
+.enclosed-response {
+    position: absolute;
+	width: 172px;
+	height: 40px;
+	margin-left: 875px;
+	background-color: green;
+	font-family: GothamHTF;
+	font-size: 12px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 2.5;
+	letter-spacing: 0.2px;
+	text-align: center;
+	color: #ffffff;
+	padding-top: 5px;
+}
+
+.validation-response {
+    position: absolute;
+	width: 172px;
+	height: 40px;
+	margin-left: 875px;
+	background-color: grey;
+	font-family: GothamHTF;
+	font-size: 12px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 2.5;
+	letter-spacing: 0.2px;
+	text-align: center;
+	color: #ffffff;
+	padding-top: 5px;
+}
+
+@media screen and (max-width: 325px) {
+	section#profile-candidate {
+		margin-left: 15px;
+		padding-left: 0px;
+	}
+	.main-profile-candidate {
+		width: 295px;
+		padding-left: 10px;
+	}
+
+	.main-profile-candidate-visible {
+		padding-left: 10px;
+		width: 295px;
+		height: auto;
+		background-color: #ffffff;
+		display: inline-block;
+	}
+	.circle-candidate {
+		width: 80px;
+		height: 80px;
+		margin-left: 10px;
+	}
+	.name-candidate {
+		font-size: 25px;
+		padding-top: 20px;
+	}
+	.update-profile {
+		left: 135px;
+		top: 300px;
+	}
+	.cta-brightblue {
+		width: 160px !important;
+		font-size: 15px !important;
+	}
+	.view-form {
+        width: 295px;
+        margin-left: 15px;
+	}
+	.ask-question {
+		width: 275px;
+	}
+	.label-ask {
+		margin-left: 15px;
+	}
+	.input-fields {
+		width: 245px !important;
+	}
+	.form-ask {
+		margin-left: 0px;
+	}
+	.stylish-dropdown {
+		margin-left: 15px !important;
+	}
+	.area {
+		margin-left: 15px;
+	}
+	.text-area {
+		width: 250px;
+	}
+	.hidden-form {
+		margin-left: 10px;
+		padding-left: 0px;
+		margin-right: 10px;
+		padding-right: 10px;
+	}
+	.check-visible {
+		left: 40px;
+		top: 670px;
+	}
+	.check-visible#second {
+		left: 40px;
+		top: 700px;
+	}
+	.submit-question {
+		margin-left: 0px;
+		text-align: center;
+    }
+    section#discussion-candidate {
+        margin-left: 15px;
+    }
+    .main-discussion {
+        width: 290px;
+    }
+    h2 {
+        margin-left: 0px;
+    }
+    .label-discussion {
+        margin-left: 15px;
+    }
+    .waiting-response, .enclosed-response, .validation-response  {
+        width: 130px;
+        height: 31px;
+        margin-left: 133px;
+        font-size: 10px;
+    }
+    .niji-response {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (min-width: 330px) and (max-width: 380px) {
+	section#profile-candidate {
+		margin-left: 15px;
+		padding-left: 0px;
+	}
+	.main-profile-candidate {
+		width: 345px;
+		padding-left: 10px;
+	}
+
+	.main-profile-candidate-visible {
+		padding-left: 10px;
+		width: 345px;
+		height: auto;
+		background-color: #ffffff;
+		display: inline-block;
+	}
+	.circle-candidate {
+		width: 80px;
+		height: 80px;
+		margin-left: 10px;
+	}
+	.name-candidate {
+		font-size: 25px;
+		padding-top: 20px;
+	}
+	.update-profile {
+		left: 135px;
+		top: 300px;
+	}
+	.cta-brightblue {
+		width: 160px !important;
+		font-size: 15px !important;
+	}
+	.view-form {
+        width: 345px;
+        margin-left: 15px;
+	}
+	.ask-question {
+		width: 325px;
+	}
+	.label-ask {
+		margin-left: 15px;
+	}
+	.input-fields {
+		width: 290px !important;
+	}
+	.form-ask {
+		margin-left: 0px;
+	}
+	.stylish-dropdown {
+		margin-left: 15px !important;
+	}
+	.area {
+		margin-left: 15px;
+	}
+	.text-area {
+		width: 300px;
+	}
+	.hidden-form {
+		margin-left: 10px;
+		padding-left: 0px;
+		margin-right: 10px;
+		padding-right: 10px;
+	}
+	.check-visible {
+		left: 40px;
+		top: 670px;
+	}
+	.check-visible#second {
+		left: 40px;
+		top: 700px;
+	}
+	.submit-question {
+		margin-left: 0px;
+		text-align: center;
+	}
+    section#discussion-candidate {
+        margin-left: 15px;
+    }
+    .main-discussion {
+        width: 345px;
+    }
+    h2 {
+        margin-left: 0px;
+    }
+    .label-discussion {
+        margin-left: 15px;
+    } 
+    .waiting-response, .enclosed-response, .validation-response  {
+        width: 130px;
+        height: 31px;
+        margin-left: 185px;
+        font-size: 10px;
+    }
+    .niji-response {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (min-width: 385px) and (max-width: 430px) {
+	section#profile-candidate {
+		margin-left: 15px;
+		padding-left: 0px;
+	}
+	.main-profile-candidate {
+		width: 395px;
+		padding-left: 10px;
+	}
+
+	.main-profile-candidate-visible {
+		padding-left: 10px;
+		width: 395px;
+		height: auto;
+		background-color: #ffffff;
+		display: inline-block;
+	}
+	.circle-candidate {
+		width: 80px;
+		height: 80px;
+		margin-left: 10px;
+	}
+	.name-candidate {
+		font-size: 25px;
+		padding-top: 20px;
+	}
+	.update-profile {
+		left: 135px;
+		top: 300px;
+	}
+	.cta-brightblue {
+		width: 160px !important;
+		font-size: 15px !important;
+	}
+	.view-form {
+        width: 395px;
+        margin-left: 15px;
+	}
+	.ask-question {
+		width: 375px;
+	}
+	.label-ask {
+		margin-left: 15px;
+	}
+	.input-fields {
+		width: 345px !important;
+	}
+	.form-ask {
+		margin-left: 0px;
+	}
+	.stylish-dropdown {
+		margin-left: 15px !important;
+	}
+	.area {
+		margin-left: 15px;
+	}
+	.text-area {
+		width: 345px;
+	}
+	.hidden-form {
+		margin-left: 10px;
+		padding-left: 0px;
+		margin-right: 10px;
+		padding-right: 10px;
+	}
+	.check-visible {
+		left: 40px;
+		top: 670px;
+	}
+	.check-visible#second {
+		left: 40px;
+		top: 700px;
+	}
+	.submit-question {
+		margin-left: 0px;
+		text-align: center;
+    }
+    section#discussion-candidate {
+        margin-left: 15px;
+    }
+    .main-discussion {
+        width: 395px;
+    }
+    h2 {
+        margin-left: 0px;
+    }
+    .label-discussion {
+        margin-left: 15px;
+    }
+    .waiting-response, .enclosed-response, .validation-response  {
+        width: 130px;
+        height: 31px;
+        margin-left: 235px;
+        font-size: 10px;
+    }
+    .niji-response {
+        margin-left: 40px;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 770px) {
+	section#profile-candidate {
+		margin-left: 15px;
+		padding-left: 0px;
+	}
+	.main-profile-candidate {
+		width: 735px;
+	}
+	.main-profile-candidate-visible {
+		width: 735px;
+		height: auto;
+		background-color: #ffffff;
+		display: inline-block;
+	}
+	.update-profile {
+		left: 255px;
+		top: 340px;
+	}
+	.view-form {
+        width: 735px;
+        margin-left: 15px;
+	}
+	.hidden-form {
+		margin-right: 60px;
+	}
+	.ask-question {
+		width: 615px;
+	}
+	.label-ask {
+		margin-left: 15px;
+	}
+	.input-fields {
+		width: 530px !important;
+	}
+	.stylish-dropdown {
+		width: 530px !important;
+		margin-left: 15px !important;
+	}
+	.area {
+		margin-left: 15px;
+	}
+	.text-area {
+		width: 530px;
+	}
+	.check-visible {
+		left: 40px;
+		top: 670px;
+	}
+	.check-visible#second {
+		left: 40px;
+		top: 700px;
+    }
+    .submit-question {
+        margin-left: 15px;
+    }
+    section#discussion-candidate {
+        margin-left: 15px;
+    }
+    .main-discussion {
+        width: 735px;
+    }
+    h2 {
+        margin-left: 0px;
+    }
+    .label-discussion {
+        margin-left: 15px;
+    }
+    .waiting-response, .enclosed-response, .validation-response  {
+        margin-left: 535px;
+    }
+    .niji-response {
+        margin-left: 375px
+    }
+}
+
+@media screen and (min-width: 780px) and (max-width: 1024px) {
+	section#profile-candidate {
+		margin-left: 25px;
+		padding-left: 0px;
+	}
+	.main-profile-candidate {
+		width: 975px;
+	}
+
+	.main-profile-candidate-visible {
+		width: 975px;
+		height: auto;
+		background-color: #ffffff;
+		display: inline-block;
+	}
+	.update-profile {
+		left: 255px;
+		top: 340px;
+	}
+	.view-form {
+        width: 975px;
+        margin-left: 25px;
+	}
+	.hidden-form {
+		margin-right: 60px;
+	}
+	.ask-question {
+        width: 855px;
+	}
+	.label-ask {
+		margin-left: 15px;
+	}
+	.input-fields {
+		width: 640px !important;
+	}
+	.text-area {
+		width: 530px;
+	}
+	.check-visible {
+		left: 40px;
+		top: 670px;
+	}
+	.check-visible#second {
+		left: 40px;
+		top: 700px;
+    }
+    .submit-question {
+        margin-left: 145px;
+    }
+    section#discussion-candidate {
+        margin-left: 25px;
+    }
+    .main-discussion {
+        width: 975px;
+    }
+    h2 {
+        margin-left: 0px;
+    }
+    .label-discussion {
+        margin-left: 15px;
+    }
+    .waiting-response, .enclosed-response, .validation-response  {
+        margin-left: 775px;
+    }
+    .niji-response {
+        margin-left: 615px;
+    }
+}
+
+@media screen and (min-width: 1030px) and (max-width: 1550px) {
+
+}
+
+@media screen and (min-width: 1550px) and (max-width: 1700px) {
+    .main-profile-candidate-visible {
+        width: 1250px;
+    }
+    .main-profile-candidate {
+        width: 1250px;
+    }
+    .ask-question {
+        width: 1125px;
+    }
+    .input-fields {
+        width: 930px !important;
+    }
+    .view-form {
+        width: 1250px;
+    }
+    .main-discussion {
+        width: 1250px;
+    }
+    .waiting-response, .enclosed-response, .validation-response  {
+        margin-left: 1050px;
+    }
+    .niji-response {
+        margin-left: 1110px;
+    }
+}
+
+@media screen and (min-width: 1700px) {
+    .main-profile-candidate-visible {
+        width: 1590px;
+    }
+    .main-profile-candidate {
+        width: 1590px;
+    }
+    .ask-question {
+        width: 1465px;
+    }
+    .input-fields {
+        width: 1250px !important;
+    }
+    .view-form {
+        width: 1590px;
+    }
+    .main-discussion {
+        width: 1590px;
+    }
+    .waiting-response, .enclosed-response, .validation-response  {
+        margin-left: 1385px;
+    }
+    .niji-response {
+        margin-left: 1225px;
+    }
 }

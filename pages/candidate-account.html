@@ -86,7 +86,7 @@
     <body>
         
         <section id="profile-candidate">
-            <div class="main-profile-candidate">
+            <div id="main-profile-candidate" class="main-profile-candidate">
                 <div class="row-custom">
                     <img class="circle-candidate"/>
                     <p class="name-candidate">Sophie L.</p>
@@ -101,53 +101,131 @@
                     <form class="form-ask">
                         <label class="label-ask">Votre question : </label>
                         <input onclick="toggle('view-form')" class="input-fields" type="text" min="5" required>
-                        <div id="view-form" class="view-form">
-                            <div class="row-custom ask-who">
-                                <label id="ask-who" class="label-ask">Posée à : </label>
-                                <div class="stylish-dropdown">
-                                    <select>
-                                        <option value="0">Toutes les expertises</option>
-                                    </select>
-                                </div>
-                            </div>
-                            
-                            
-                            <div class="row-custom ask-who">
-                                <label id="ask-who" class="label-ask">Visible :</label>
-                                <div class="check-visible">
-                                    <input type="checkbox" id="test1" />
-                                    <label class="fence" for="test1">uniquement par cette ambassadeur</label>
-                                </div>
-                                <div id="second" class="check-visible">
-                                    <input type="checkbox" id="test2" />
-                                    <label class="fence" for="test2">par tous une fois ma question validée et qu'un ambassadeur y aura répondu</label>
-                                </div>
-                            </div>
-                            <div class="row-custom theme">
-                                <label class="label-ask">Thématique :</label>
-                                <div id="theme" class="stylish-dropdown">
-                                    <select>
-                                        <option value="0">Toutes les thématiques</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="row-custom ask-who">
-                                <label id="ask-who" class="label-ask">Details :</label>
-                                <div class="area">
-                                    <textarea rows="5" class="form-control text-area" placeholder="Ecrivez votre message..."></textarea>
-                                </div>
-                            </div>
-                            <div class="submit-question">
-                                <button class="cta-brightblue">
-                                    Envoyer la question
-                                </button>
-                            </div>
-                        </form>
                     </div>
                 </div>
-            </div>
+            </section>
+            
         </section>
-    </section>
-    
-    
+        <div id="view-form" class="view-form">
+            <div class="hidden-form">
+                <div class="row-custom ask-who">
+                    <label id="ask-who" class="label-ask">Posée à : </label>
+                    <div class="stylish-dropdown">
+                        <select>
+                            <option value="0">Toutes les expertises</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="row-custom ask-who">
+                    <label id="ask-who" class="label-ask">Visible :</label>
+                    <!-- <div class="check-visible">
+                        <input type="checkbox" id="test1" />
+                        <label class="fence" for="test1">uniquement par cette ambassadeur</label>
+                    </div>
+                    <div id="second" class="check-visible">
+                        <input type="checkbox" id="test2" />
+                        <label class="fence" for="test2">par tous une fois ma question validée et qu'un ambassadeur y aura répondu</label>
+                    </div> -->
+                </div>
+                <div class="row-custom theme">
+                    <label class="label-ask">Thématique :</label>
+                    <div id="theme" class="stylish-dropdown">
+                        <select>
+                            <option value="0">Toutes les thématiques</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row-custom ask-who">
+                    <label id="ask-who" class="label-ask">Details :</label>
+                    <div class="area">
+                        <textarea rows="5" class="form-control text-area" placeholder="Ecrivez votre message..."></textarea>
+                    </div>
+                </div>
+                <div class="submit-question">
+                    <button class="cta-brightblue">
+                        Envoyer la question
+                    </button>
+                </div>
+            </form>
+            
+        </div>
+    </div>
+</section>
+
+
+<section id="discussion-candidate">
+    <div class="main-discussion">
+        <h2>Mes discussions publiques</h2>
+        <hr class="hr-discussion">
+        <div class="row-custom">
+            <label class="label-discussion">Afficher :</label>
+            <div id="theme" class="stylish-dropdown">
+                <select>
+                    <option value="0">Toutes les discussions</option>
+                </select>
+            </div>
+        </div>
+        <div class="card-discussion">
+            <div class="waiting-response">
+                <p>En attente de réponse</p>
+            </div>
+            <p class="niji-daily">Niji au quotidien</p>
+            <p class="niji-question">Quelles sont les perspectives d'évolution ?</p>
+            <div class="row-custom">  
+                <p class="niji-posted">Posté le 24/09/2018 par Sophie L.</p>    
+                <p class="niji-response">6 réponses</p>  
+            </div>
+        </div>
+        <div class="card-discussion">
+            <div class="enclosed-response">
+                <p>Cloturée</p>
+            </div>
+            <p class="niji-daily">Niji au quotidien</p>
+            <p class="niji-question">Quelles sont les perspectives d'évolution ?</p>
+            <div class="row-custom">  
+                <p class="niji-posted">Posté le 24/09/2018 par Sophie L.</p>    
+                <p class="niji-response">6 réponses</p>  
+            </div>
+        </div>
+        <div class="card-discussion">
+            <div class="validation-response">
+                <p>En attente de validation</p>
+            </div>
+            <p class="niji-daily">Niji au quotidien</p>
+            <p class="niji-question">Quelles sont les perspectives d'évolution ?</p>
+            <div class="row-custom">  
+                <p class="niji-posted">Posté le 24/09/2018 par Sophie L.</p>    
+                <p class="niji-response">6 réponses</p>  
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="discussion-candidate">
+    <div class="main-discussion">
+        <h2>Mes discussions privées</h2>
+        <hr class="hr-discussion">
+        <div class="card-discussion-private">
+            <p class="niji-daily">Niji au quotidien</p>
+            <p class="niji-question">Quelles sont les perspectives d'évolution ?</p>
+            <div class="row-custom">  
+                <p class="niji-posted">Posté le 24/09/2018 par Sophie L.</p>    
+                <p class="niji-response">6 réponses</p>  
+            </div>
+        </div>
+        <div class="card-discussion-private">
+            <p class="niji-daily">Niji au quotidien</p>
+            <p class="niji-question">Quelles sont les perspectives d'évolution ?</p>
+            <div class="row-custom">  
+                <p class="niji-posted">Posté le 24/09/2018 par Sophie L.</p>    
+                <p class="niji-response">6 réponses</p>  
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Hamburger Menu JavaScript -->
+<script src="../assets/js/hamburger-menu.js"></script>
+
 </body>
