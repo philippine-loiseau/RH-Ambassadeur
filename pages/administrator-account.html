@@ -1,0 +1,1457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="../assets/img/favicon.ico" />
+    
+    <title>RH - Ambassadeur</title>
+    <!-- FontAwesome 5.6.1 -->
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+    integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+    crossorigin="anonymous"
+    />
+    
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="pagination-table.css" rel="stylesheet">
+    <link href="../../assets/css/bootstrap/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <link href="../../assets/css/bootstrap/responsive.bootstrap4.min.css" rel="stylesheet">
+    
+    <!-- Custom styles -->
+    <link href="../assets/css/home-page.css" rel="stylesheet" />
+    <link href="../assets/css/administrator-account.css" rel="stylesheet" />
+    <link href="../assets/css/hamburger-menu.css" rel="stylesheet" />
+    <link href="../components/cta-brightblue/cta-brightblue.css" rel="stylesheet" />
+    <link href="../components/dropdown-menu/dropdown-menu.css" rel="stylesheet" />
+    <link href="../components/pagination-table/pagination-table.css" rel="stylesheet" />
+    <link href="../assets/css/styles.css" rel="stylesheet" />
+    <link href="../assets/css/fonts.css" rel="stylesheet" />
+    
+</head>
+<section id="background">
+    <header>
+        <a href="#" id="logo-hamburger-menu"></a>
+        <div id="hamburger">
+            <div id="hamburger-content">
+                <form class="container-fluid row justify-content-end" id="search-media">
+                    <div>
+                        <input
+                        type="text"
+                        id="search-bar"
+                        placeholder="&quot;mobilité&quot; ou &quot;valeurs de Niji&quot;"
+                        />
+                        <button type="submit" class="search-icon"><i class="fas fa-search"></i></button>
+                    </div>
+                    <div>
+                        <button type="submit" class="media-icon" id="twitter"><i class="fab fa-twitter"></i></button>
+                    </div>
+                    <div>
+                        <button type="submit" class="media-icon" id="linkedin">
+                            <i class="fab fa-linkedin-in"></i>
+                        </button>
+                    </div>
+                    <div><button type="submit" class="signin">Mon compte</button></div>
+                </form>
+                <nav class="row container-fluid">
+                    <ul class="nav col-md-12 col-lg-12 col-xl-12" id="nav">
+                        <li id="logo" class="nav-item col-md-6 col-lg-6 col-xl-4">
+                            <img id="logo" src="../assets/img/logo_niji.png" alt="Logo Niji" />
+                        </li>
+                        <li id="link1" class="nav-item col-md-auto">
+                            <a class="nav-link item-nav" href="#">Les discussions</a>
+                        </li>
+                        <li class="nav-item col-md-auto"><a class="nav-link item-nav" href="#">Les ambassadeurs</a></li>
+                        <li class="nav-item col-md-auto">
+                            <a class="nav-link item-nav" href="#">#YaDeLaVieChezNiji</a>
+                        </li>
+                        <li class="nav-item col-md-auto">
+                            <button type="submit" class="button-offers">Nos offres d'emploi</button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <button id="hamburger-button">&#9776;</button>
+            <div id="hamburger-sidebar">
+                <div id="hamburger-sidebar-header"></div>
+                <div id="hamburger-sidebar-body"></div>
+            </div>
+            <div id="hamburger-overlay"></div>
+        </div>
+    </header>  
+    <body>
+        
+        <section id="profile-administrator">
+            <div class="main-profile-administrator">
+                <div class="row-custom">
+                    <img class="circle-administrator"/>
+                    <p class="name-administrator">Administrateur</p>
+                    <div class="admin-discussion">
+                        <h6 class="board-title">Tableau de bord</h6>
+                        <hr>
+                        <p class="board"><b class="blue">3</b> discussions ou messages signalés</p>
+                        <p class="board"><b class="blue">12</b> discussions à valider</p>
+                        <p class="board"><b class="blue">0</b> discussions en attente de transfert</p>
+                        <p class="board"><b class="blue">8</b> discussions en attente de réponse</p>
+                    </div>
+                </div> 
+                <div class="update-profile">
+                    <button class="cta-brightblue">
+                        Modifier mon compte
+                    </button>
+                </div>
+            </div>
+        </section>
+    </section>
+    
+    <section id="admin-discussion">
+        <div class="main-admin-discussion">
+            <h2>XX discussions</h2>
+            <hr class="hr-discussion">
+            
+            <form>
+                <div class="main-search-discussion">
+                    <h6 class="filter-title">Filtrer les discussions</h6>
+                    <hr class="hr-filter">
+                    <div class="row-custom form-drop">
+                        <div class="dropdown-search">
+                            <label class="label-search" for="">Statut</label>
+                            <div class="stylish-dropdown">
+                                <select>
+                                    <option value="0">Tous les status</option>
+                                    <option value="1">En attente de validation</option>
+                                    <option value="2">En attente de réponse</option>
+                                    <option value="3">Cloturée</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="dropdown-search-2">
+                            <label class="label-search" for="">Question posée à</label>
+                            <div class="stylish-dropdown">
+                                <select>
+                                    <option value="0">Tous les ambassadeurs</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="row-custom form-drop">
+                        <div class="dropdown-search">
+                            <label class="label-search-2" for="">Auteur</label>
+                            <div class="stylish-dropdown">
+                                <select>
+                                    <option value="0">Tous les auteurs</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="dropdown-search-3">
+                            <label class="label-search" for="">Dernière mise à jour</label>
+                            <div class="stylish-dropdown">
+                                <select>
+                                    <option value="0">Toutes les discussions</option>
+                                    <option value="1">Mois en cours</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="center">
+                        <button class="cta-brightblue">
+                            Rechercher
+                        </button>
+                    </div>
+                </div>
+            </form>
+            
+            
+            <!-- RESULTS -->
+            <div class="table-discussion">
+                <table id="example" class="table table-striped " style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Auteur</th>
+                            <th>Thème</th>
+                            <th>Titre</th>
+                            <th>Statut</th>
+                            <th>Posée à</th>
+                            <th>Date dernière mise à jour</th>
+                            <th>Action</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Tiger Nixon</td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+                            <td>61</td>
+                            <td class="td-center"><div class="waiting-response">En attente de réponse</div></td>
+                            <td class="td-center">Franck L.</td>
+                            <td class="td-center">12/05/2019</td>
+                            <td>
+                                <div class="row-action">
+                                    <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                    <button class="button-action"><i class="far fa-edit"></i></button>
+                                    <button class="button-action"><i class="fas fa-trash"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Garrett Winters</td>
+                            <td>Accountant</td>
+                            <td>Tokyo</td>
+                            <td>63</td>
+                            <td class="td-center"><div class="validation-response">En attente de validation</div></td>
+                            <td class="td-center">Franck L.</td>
+                            <td class="td-center">12/05/2019</td>
+                            <td>
+                                <div class="row-action">
+                                    <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                    <button class="button-action"><i class="far fa-edit"></i></button>
+                                    <button class="button-action"><i class="fas fa-trash"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ashton Cox</td>
+                            <td>Junior Technical Author</td>
+                            <td>San Francisco</td>
+                            <td>66</td>
+                            <td class="td-center"><div class="enclosed-response">Cloturée</div></td>
+                            <td class="td-center">Franck L.</td>
+                            <td class="td-center">12/05/2019</td>
+                            <td>
+                                <div class="row-action">
+                                    <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                    <button class="button-action"><i class="far fa-edit"></i></button>
+                                    <button class="button-action"><i class="fas fa-trash"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Cedric Kelly</td>
+                            <td>Senior Javascript Developer</td>
+                            <td>Edinburgh</td>
+                            <td>22</td>
+                            <td class="td-center"><div class="waiting-response">En attente de réponse</div></td>
+                            <td class="td-center">Franck L.</td>
+                            <td class="td-center">12/05/2019</td>
+                            <td>
+                                <div class="row-action">
+                                    <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                    <button class="button-action"><i class="far fa-edit"></i></button>
+                                    <button class="button-action"><i class="fas fa-trash"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Airi Satou</td>
+                            <td>Accountant</td>
+                            <td>Tokyo</td>
+                            <td>33</td>
+                            <td class="td-center"><div class="enclosed-response">Cloturée</div></td>
+                            <td class="td-center">Franck L.</td>
+                            <td class="td-center">12/05/2019</td>
+                            <td>
+                                <div class="row-action">
+                                    <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                    <button class="button-action"><i class="far fa-edit"></i></button>
+                                    <button class="button-action"><i class="fas fa-trash"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Brielle Williamson</td>
+                            <td>Integration Specialist</td>
+                            <td>New York</td>
+                            <td>61</td>
+                            <td class="td-center"><div class="enclosed-response">Cloturée</div></td>
+                            <td class="td-center">Franck L.</td>
+                            <td class="td-center">12/05/2019</td>
+                            <td>
+                                <div class="row-action">
+                                    <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                    <button class="button-action"><i class="far fa-edit"></i></button>
+                                    <button class="button-action"><i class="fas fa-trash"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Herrod Chandler</td>
+                            <td>Sales Assistant</td>
+                            <td>San Francisco</td>
+                            <td>59</td>
+                            <td class="td-center"><div class="validation-response">En attente de validation</div></td>
+                            <td class="td-center">Franck L.</td>
+                            <td class="td-center">12/05/2019</td>
+                            <td>
+                                <div class="row-action">
+                                    <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                    <button class="button-action"><i class="far fa-edit"></i></button>
+                                    <button class="button-action"><i class="fas fa-trash"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Rhona Davidson</td>
+                            <td>Integration Specialist</td>
+                            <td>Tokyo</td>
+                            <td>55</td>
+                            <td class="td-center"><div class="enclosed-response">Cloturée</div></td>
+                            <td class="td-center">Franck L.</td>
+                            <td class="td-center">12/05/2019</td>
+                            <td>
+                                <div class="row-action">
+                                    <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                    <button class="button-action"><i class="far fa-edit"></i></button>
+                                    <button class="button-action"><i class="fas fa-trash"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Colleen Hurst</td>
+                            <td>Javascript Developer</td>
+                            <td>San Francisco</td>
+                            <td>39</td>
+                            <td class="td-center"><div class="enclosed-response">Cloturée</div></td>
+                            <td class="td-center">Franck L.</td>
+                            <td class="td-center">12/05/2019</td>
+                            <td>
+                                <div class="row-action">
+                                    <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                    <button class="button-action"><i class="far fa-edit"></i></button>
+                                    <button class="button-action"><i class="fas fa-trash"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Sonya Frost</td>
+                            <td>Software Engineer</td>
+                            <td>Edinburgh</td>
+                            <td>23</td>
+                            <td class="td-center"><div class="waiting-response">En attente de réponse</div></td>
+                            <td class="td-center">Franck L.</td>
+                            <td class="td-center">12/05/2019</td>
+                            <td>
+                                <div class="row-action">
+                                    <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                    <button class="button-action"><i class="far fa-edit"></i></button>
+                                    <button class="button-action"><i class="fas fa-trash"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Jena Gaines</td>
+                            <td>Office Manager</td>
+                            <td>London</td>
+                            <td>30</td>
+                            <td class="td-center"><div class="waiting-response">En attente de réponse</div></td>
+                            <td class="td-center">Franck L.</td>
+                            <td class="td-center">12/05/2019</td>
+                            <td>
+                                <div class="row-action">
+                                    <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                    <button class="button-action"><i class="far fa-edit"></i></button>
+                                    <button class="button-action"><i class="fas fa-trash"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Quinn Flynn</td>
+                            <td>Support Lead</td>
+                            <td>Edinburgh</td>
+                            <td>22</td>
+                            <td class="td-center"><div class="validation-response">En attente de validation</div></td>
+                            <td class="td-center">Franck L.</td>
+                            <td class="td-center">12/05/2019</td>
+                            <td>
+                                <div class="row-action">
+                                    <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                    <button class="button-action"><i class="far fa-edit"></i></button>
+                                    <button class="button-action"><i class="fas fa-trash"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Charde Marshall</td>
+                            <td>Regional Director</td>
+                            <td>San Francisco</td>
+                            <td>36</td>
+                            <td class="td-center"><div class="validation-response">En attente de validation</div></td>
+                            <td class="td-center">Franck L.</td>
+                            <td class="td-center">12/05/2019</td>
+                            <td>
+                                <div class="row-action">
+                                    <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                    <button class="button-action"><i class="far fa-edit"></i></button>
+                                    <button class="button-action"><i class="fas fa-trash"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Haley Kennedy</td>
+                            <td>Senior Marketing Designer</td>
+                            <td>London</td>
+                            <td>43</td>
+                            <td class="td-center"><div class="enclosed-response">Cloturée</div></td>
+                            <td class="td-center">Franck L.</td>
+                            <td class="td-center">12/05/2019</td>
+                            <td>
+                                <div class="row-action">
+                                    <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                    <button class="button-action"><i class="far fa-edit"></i></button>
+                                    <button class="button-action"><i class="fas fa-trash"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Tatyana Fitzpatrick</td>
+                            <td>Regional Director</td>
+                            <td>London</td>
+                            <td>19</td>
+                            <td class="td-center"><div class="validation-response">En attente de validation</div></td>
+                            <td class="td-center">Franck L.</td>
+                            <td class="td-center">12/05/2019</td>
+                            <td>
+                                <div class="row-action">
+                                    <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                    <button class="button-action"><i class="far fa-edit"></i></button>
+                                    <button class="button-action"><i class="fas fa-trash"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Michael Silva</td>
+                            <td>Marketing Designer</td>
+                            <td>London</td>
+                            <td>66</td>
+                            <td class="td-center"><div class="waiting-response">En attente de réponse</div></td>
+                            <td class="td-center">Franck L.</td>
+                            <td class="td-center">12/05/2019</td>
+                            <td>
+                                <div class="row-action">
+                                    <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                    <button class="button-action"><i class="far fa-edit"></i></button>
+                                    <button class="button-action"><i class="fas fa-trash"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Brenden Wagner</td>
+                            <td>Software Engineer</td>
+                            <td>San Francisco</td>
+                            <td>28</td>
+                            <td class="td-center"><div class="enclosed-response">Cloturée</div></td>
+                            <td class="td-center">Franck L.</td>
+                            <td class="td-center">12/05/2019</td>
+                            <td>
+                                <div class="row-action">
+                                    <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                    <button class="button-action"><i class="far fa-edit"></i></button>
+                                    <button class="button-action"><i class="fas fa-trash"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Fiona Green</td>
+                            <td>Chief Operating Officer (COO)</td>
+                            <td>San Francisco</td>
+                            <td>48</td>
+                            <td class="td-center"><div class="waiting-response">En attente de réponse</div></td>
+                            <td class="td-center">Franck L.</td>
+                            <td class="td-center">12/05/2019</td>
+                            <td>
+                                <div class="row-action">
+                                    <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                    <button class="button-action"><i class="far fa-edit"></i></button>
+                                    <button class="button-action"><i class="fas fa-trash"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Shou Itou</td>
+                            <td>Regional Marketing</td>
+                            <td>Tokyo</td>
+                            <td>20</td>
+                            <td class="td-center"><div class="waiting-response">En attente de réponse</div></td>
+                            <td class="td-center">Franck L.</td>
+                            <td class="td-center">12/05/2019</td>
+                            <td>
+                                <div class="row-action">
+                                    <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                    <button class="button-action"><i class="far fa-edit"></i></button>
+                                    <button class="button-action"><i class="fas fa-trash"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Michelle House</td>
+                            <td>Integration Specialist</td>
+                            <td>Sidney</td>
+                            <td>37</td>
+                            <td class="td-center"><div class="validation-response">En attente de validation</div></td>
+                            <td class="td-center">Franck L.</td>
+                            <td class="td-center">12/05/2019</td>
+                            <td>
+                                <div class="row-action">
+                                    <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                    <button class="button-action"><i class="far fa-edit"></i></button>
+                                    <button class="button-action"><i class="fas fa-trash"></i></button>
+                                </div>
+                            </td>
+                            
+                            <tr>
+                                <td>Suki Burks</td>
+                                <td>Developer</td>
+                                <td>London</td>
+                                <td>53</td>
+                                <td class="td-center"><div class="validation-response">En attente de validation</div></td>
+                                <td class="td-center">Franck L.</td>
+                                <td class="td-center">12/05/2019</td>
+                                <td>
+                                    <div class="row-action">
+                                        <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                        <button class="button-action"><i class="far fa-edit"></i></button>
+                                        <button class="button-action"><i class="fas fa-trash"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td>Prescott Bartlett</td>
+                                <td>Technical Author</td>
+                                <td>London</td>
+                                <td>27</td>
+                                <td class="td-center"><div class="validation-response">En attente de validation</div></td>
+                                <td class="td-center">Franck L.</td>
+                                <td class="td-center">12/05/2019</td>
+                                <td>
+                                    <div class="row-action">
+                                        <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                        <button class="button-action"><i class="far fa-edit"></i></button>
+                                        <button class="button-action"><i class="fas fa-trash"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td>Gavin Cortez</td>
+                                <td>Team Leader</td>
+                                <td>San Francisco</td>
+                                <td>22</td>
+                                <td class="td-center"><div class="waiting-response">En attente de réponse</div></td>
+                                <td class="td-center">Franck L.</td>
+                                <td class="td-center">12/05/2019</td>
+                                <td>
+                                    <div class="row-action">
+                                        <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                        <button class="button-action"><i class="far fa-edit"></i></button>
+                                        <button class="button-action"><i class="fas fa-trash"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="admin-ambassador">                
+                <div class="main-admin-discussion">
+                    <h2>XX ambassadeurs</h2>
+                    <hr class="hr-discussion">
+                    
+                    <form>
+                        <div class="main-search-discussion">
+                            <h6 class="filter-title">Filtrer les ambassadeurs</h6>
+                            <hr class="hr-filter">
+                            <div class="row-custom form-drop">
+                                <div class="dropdown-search">
+                                    <label class="label-search-3" for="">Fonction</label>
+                                    <div class="stylish-dropdown">
+                                        <select>
+                                            <option value="0">Toutes les expertises</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="dropdown-search-4">
+                                    <label class="label-search-4" for="">Bureaux</label>
+                                    <div class="stylish-dropdown">
+                                        <select>
+                                            <option value="0">Tous les bureaux</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="row-custom form-drop">
+                                <div class="dropdown-search">
+                                    <label class="label-search-2" for="">Autonomie</label>
+                                    <div class="stylish-dropdown">
+                                        <select>
+                                            <option value="0">Voir tous</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="dropdown-search-3">
+                                    <label class="label-search" for="">Dernière activité</label>
+                                    <div class="stylish-dropdown">
+                                        <select>
+                                            <option value="0">Toutes les discussions</option>
+                                            <option value="1">Mois en cours</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="center">
+                                <button class="cta-brightblue">
+                                    Rechercher
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    
+                    
+                    <!-- RESULTS -->
+                    <div class="table-discussion">
+                        <table id="ambassador" class="table table-striped " style="width:100%">
+                            <thead>
+                                <tr>
+                                    <th>Prénom - Nom</th>
+                                    <th>Fonction</th>
+                                    <th>Bureaux </th>
+                                    <th>Autonomie</th>
+                                    <th>Nb de discussions associées</th>
+                                    <th>Nb de discussion en attente de retour</th>
+                                    <th>Date dernière activité</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                    
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Tiger Nixon</td>
+                                    <td>System Architect</td>
+                                    <td>Edinburgh</td>
+                                    <td>61</td>
+                                    <td class="td-center">Franck L.</td>
+                                    <td class="td-center">12/05/2019</td>
+                                    <td class="td-center">12/05/2019</td>
+                                    <td class="td-center"><div class="status-offline"></div></td>
+                                    <td>
+                                        <div class="row-action">
+                                            <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                            <button class="button-action"><i class="far fa-edit"></i></button>
+                                            <button class="button-action"><i class="fas fa-trash"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Garrett Winters</td>
+                                    <td>Accountant</td>
+                                    <td>Tokyo</td>
+                                    <td>63</td>
+                                    <td class="td-center"></td>
+                                    <td class="td-center">Franck L.</td>
+                                    <td class="td-center">12/05/2019</td>
+                                    <td class="td-center"><div class="status-active"></div></td>
+                                    <td>
+                                        <div class="row-action">
+                                            <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                            <button class="button-action"><i class="far fa-edit"></i></button>
+                                            <button class="button-action"><i class="fas fa-trash"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Ashton Cox</td>
+                                    <td>Junior Technical Author</td>
+                                    <td>San Francisco</td>
+                                    <td>66</td>
+                                    <td class="td-center"></td>
+                                    <td class="td-center">Franck L.</td>
+                                    <td class="td-center">12/05/2019</td>
+                                    <td class="td-center"><div class="status-offline"></div></td>
+                                    <td>
+                                        <div class="row-action">
+                                            <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                            <button class="button-action"><i class="far fa-edit"></i></button>
+                                            <button class="button-action"><i class="fas fa-trash"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Cedric Kelly</td>
+                                    <td>Senior Javascript Developer</td>
+                                    <td>Edinburgh</td>
+                                    <td>22</td>
+                                    <td class="td-center"></td>
+                                    <td class="td-center">Franck L.</td>
+                                    <td class="td-center">12/05/2019</td>
+                                    <td class="td-center"><div class="status-active"></div></td>
+                                    <td>
+                                        <div class="row-action">
+                                            <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                            <button class="button-action"><i class="far fa-edit"></i></button>
+                                            <button class="button-action"><i class="fas fa-trash"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Airi Satou</td>
+                                    <td>Accountant</td>
+                                    <td>Tokyo</td>
+                                    <td>33</td>
+                                    <td class="td-center"></td>
+                                    <td class="td-center">Franck L.</td>
+                                    <td class="td-center">12/05/2019</td>
+                                    <td class="td-center"><div class="status-active"></div></td>
+                                    <td>
+                                        <div class="row-action">
+                                            <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                            <button class="button-action"><i class="far fa-edit"></i></button>
+                                            <button class="button-action"><i class="fas fa-trash"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Brielle Williamson</td>
+                                    <td>Integration Specialist</td>
+                                    <td>New York</td>
+                                    <td>61</td>
+                                    <td class="td-center"></td>
+                                    <td class="td-center">Franck L.</td>
+                                    <td class="td-center">12/05/2019</td>
+                                    <td class="td-center"><div class="status-offline"></div></td>
+                                    <td>
+                                        <div class="row-action">
+                                            <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                            <button class="button-action"><i class="far fa-edit"></i></button>
+                                            <button class="button-action"><i class="fas fa-trash"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Herrod Chandler</td>
+                                    <td>Sales Assistant</td>
+                                    <td>San Francisco</td>
+                                    <td>59</td>
+                                    <td class="td-center"></td>
+                                    <td class="td-center">Franck L.</td>
+                                    <td class="td-center">12/05/2019</td>
+                                    <td class="td-center"><div class="status-offline"></div></td>
+                                    <td>
+                                        <div class="row-action">
+                                            <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                            <button class="button-action"><i class="far fa-edit"></i></button>
+                                            <button class="button-action"><i class="fas fa-trash"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Rhona Davidson</td>
+                                    <td>Integration Specialist</td>
+                                    <td>Tokyo</td>
+                                    <td>55</td>
+                                    <td class="td-center"></td>
+                                    <td class="td-center">Franck L.</td>
+                                    <td class="td-center">12/05/2019</td>
+                                    <td class="td-center"><div class="status-active"></div></td>
+                                    <td>
+                                        <div class="row-action">
+                                            <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                            <button class="button-action"><i class="far fa-edit"></i></button>
+                                            <button class="button-action"><i class="fas fa-trash"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Colleen Hurst</td>
+                                    <td>Javascript Developer</td>
+                                    <td>San Francisco</td>
+                                    <td>39</td>
+                                    <td class="td-center"></td>
+                                    <td class="td-center">Franck L.</td>
+                                    <td class="td-center">12/05/2019</td>
+                                    <td class="td-center"><div class="status-active"></div></td>
+                                    <td>
+                                        <div class="row-action">
+                                            <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                            <button class="button-action"><i class="far fa-edit"></i></button>
+                                            <button class="button-action"><i class="fas fa-trash"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Sonya Frost</td>
+                                    <td>Software Engineer</td>
+                                    <td>Edinburgh</td>
+                                    <td>23</td>
+                                    <td class="td-center"></td>
+                                    <td class="td-center">Franck L.</td>
+                                    <td class="td-center">12/05/2019</td>
+                                    <td class="td-center"><div class="status-active"></div></td>
+                                    <td>
+                                        <div class="row-action">
+                                            <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                            <button class="button-action"><i class="far fa-edit"></i></button>
+                                            <button class="button-action"><i class="fas fa-trash"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Jena Gaines</td>
+                                    <td>Office Manager</td>
+                                    <td>London</td>
+                                    <td>30</td>
+                                    <td class="td-center"></td>
+                                    <td class="td-center">Franck L.</td>
+                                    <td class="td-center">12/05/2019</td>
+                                    <td class="td-center"><div class="status-offline"></div></td>
+                                    <td>
+                                        <div class="row-action">
+                                            <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                            <button class="button-action"><i class="far fa-edit"></i></button>
+                                            <button class="button-action"><i class="fas fa-trash"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Quinn Flynn</td>
+                                    <td>Support Lead</td>
+                                    <td>Edinburgh</td>
+                                    <td>22</td>
+                                    <td class="td-center"></td>
+                                    <td class="td-center">Franck L.</td>
+                                    <td class="td-center">12/05/2019</td>
+                                    <td class="td-center"><div class="status-offline"></div></td>
+                                    <td>
+                                        <div class="row-action">
+                                            <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                            <button class="button-action"><i class="far fa-edit"></i></button>
+                                            <button class="button-action"><i class="fas fa-trash"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Charde Marshall</td>
+                                    <td>Regional Director</td>
+                                    <td>San Francisco</td>
+                                    <td>36</td>
+                                    <td class="td-center"></td>
+                                    <td class="td-center">Franck L.</td>
+                                    <td class="td-center">12/05/2019</td>
+                                    <td class="td-center"><div class="status-active"></div></td>
+                                    <td>
+                                        <div class="row-action">
+                                            <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                            <button class="button-action"><i class="far fa-edit"></i></button>
+                                            <button class="button-action"><i class="fas fa-trash"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Haley Kennedy</td>
+                                    <td>Senior Marketing Designer</td>
+                                    <td>London</td>
+                                    <td>43</td>
+                                    <td class="td-center"></td>
+                                    <td class="td-center">Franck L.</td>
+                                    <td class="td-center">12/05/2019</td>
+                                    <td class="td-center"><div class="status-offline"></div></td>
+                                    <td>
+                                        <div class="row-action">
+                                            <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                            <button class="button-action"><i class="far fa-edit"></i></button>
+                                            <button class="button-action"><i class="fas fa-trash"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Tatyana Fitzpatrick</td>
+                                    <td>Regional Director</td>
+                                    <td>London</td>
+                                    <td>19</td>
+                                    <td class="td-center"></td>
+                                    <td class="td-center">Franck L.</td>
+                                    <td class="td-center">12/05/2019</td>
+                                    <td class="td-center"><div class="status-offline"></div></td>
+                                    <td>
+                                        <div class="row-action">
+                                            <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                            <button class="button-action"><i class="far fa-edit"></i></button>
+                                            <button class="button-action"><i class="fas fa-trash"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Michael Silva</td>
+                                    <td>Marketing Designer</td>
+                                    <td>London</td>
+                                    <td>66</td>
+                                    <td class="td-center"></td>
+                                    <td class="td-center">Franck L.</td>
+                                    <td class="td-center">12/05/2019</td>
+                                    <td class="td-center"><div class="status-offline"></div></td>
+                                    <td>
+                                        <div class="row-action">
+                                            <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                            <button class="button-action"><i class="far fa-edit"></i></button>
+                                            <button class="button-action"><i class="fas fa-trash"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Brenden Wagner</td>
+                                    <td>Software Engineer</td>
+                                    <td>San Francisco</td>
+                                    <td>28</td>
+                                    <td class="td-center"></td>
+                                    <td class="td-center">Franck L.</td>
+                                    <td class="td-center">12/05/2019</td>
+                                    <td class="td-center"><div class="status-offline"></div></td>
+                                    <td>
+                                        <div class="row-action">
+                                            <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                            <button class="button-action"><i class="far fa-edit"></i></button>
+                                            <button class="button-action"><i class="fas fa-trash"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Fiona Green</td>
+                                    <td>Chief Operating Officer (COO)</td>
+                                    <td>San Francisco</td>
+                                    <td>48</td>
+                                    <td class="td-center"></td>
+                                    <td class="td-center">Franck L.</td>
+                                    <td class="td-center">12/05/2019</td>
+                                    <td class="td-center"><div class="status-offline"></div></td>
+                                    <td>
+                                        <div class="row-action">
+                                            <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                            <button class="button-action"><i class="far fa-edit"></i></button>
+                                            <button class="button-action"><i class="fas fa-trash"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Shou Itou</td>
+                                    <td>Regional Marketing</td>
+                                    <td>Tokyo</td>
+                                    <td>20</td>
+                                    <td class="td-center"></td>
+                                    <td class="td-center">Franck L.</td>
+                                    <td class="td-center">12/05/2019</td>
+                                    <td class="td-center"><div class="status-offline"></div></td>
+                                    <td>
+                                        <div class="row-action">
+                                            <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                            <button class="button-action"><i class="far fa-edit"></i></button>
+                                            <button class="button-action"><i class="fas fa-trash"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Michelle House</td>
+                                    <td>Integration Specialist</td>
+                                    <td>Sidney</td>
+                                    <td>37</td>
+                                    <td class="td-center"></td>
+                                    <td class="td-center">Franck L.</td>
+                                    <td class="td-center">12/05/2019</td>
+                                    <td class="td-center"><div class="status-offline"></div></td>
+                                    <td>
+                                        <div class="row-action">
+                                            <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                            <button class="button-action"><i class="far fa-edit"></i></button>
+                                            <button class="button-action"><i class="fas fa-trash"></i></button>
+                                        </div>
+                                    </td>
+                                    
+                                    <tr>
+                                        <td>Suki Burks</td>
+                                        <td>Developer</td>
+                                        <td>London</td>
+                                        <td>53</td>
+                                        <td class="td-center"></td>
+                                        <td class="td-center">Franck L.</td>
+                                        <td class="td-center">12/05/2019</td>
+                                        <td class="td-center"><div class="status-active"></div></td>
+                                        <td>
+                                            <div class="row-action">
+                                                <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                                <button class="button-action"><i class="far fa-edit"></i></button>
+                                                <button class="button-action"><i class="fas fa-trash"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>Prescott Bartlett</td>
+                                        <td>Technical Author</td>
+                                        <td>London</td>
+                                        <td>27</td>
+                                        <td class="td-center"></td>
+                                        <td class="td-center">Franck L.</td>
+                                        <td class="td-center">12/05/2019</td>
+                                        <td class="td-center"><div class="status-offline"></div></td>
+                                        <td>
+                                            <div class="row-action">
+                                                <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                                <button class="button-action"><i class="far fa-edit"></i></button>
+                                                <button class="button-action"><i class="fas fa-trash"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>Gavin Cortez</td>
+                                        <td>Team Leader</td>
+                                        <td>San Francisco</td>
+                                        <td>22</td>
+                                        <td class="td-center">Franck L.</td>
+                                        <td class="td-center">12/05/2019</td>
+                                        <td class="td-center">12/05/2019</td>
+                                        <td class="td-center"><div class="status-active"></div></td>
+                                        <td>
+                                            <div class="row-action">
+                                                <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                                <button class="button-action"><i class="far fa-edit"></i></button>
+                                                <button class="button-action"><i class="fas fa-trash"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="admin-candidate">
+                    <div class="main-admin-discussion">
+                        <h2>XX candidats</h2>
+                        <hr class="hr-discussion">
+                        <div class="table-discussion">
+                            <table id="candidate" class="table table-striped " style="width:100%">
+                                <thead>
+                                    <tr>
+                                        <th>Date de création</th>
+                                        <th>Prénom Nom</th>
+                                        <th>E-mail </th>
+                                        <th>Nb de questions posées</th>
+                                        <th>Nb de questions en attente de retour</th>
+                                        <th>Status</th>
+                                        <th>Date de dernière activité</th>
+                                        <th>Action</th>
+                                        
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Tiger Nixon</td>
+                                        <td>System Architect</td>
+                                        <td>Edinburgh</td>
+                                        <td>61</td>
+                                        <td class="td-center">Franck L.</td>
+                                        <td class="td-center"><div class="status-offline"></div></td>
+                                        <td class="td-center">12/05/2019</td>
+                                        <td>
+                                            <div class="row-action">
+                                                <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                                <button class="button-action"><i class="fas fa-trash"></i></button>
+                                                <button class="button-action"><i class="fas fa-envelope"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Garrett Winters</td>
+                                        <td>Accountant</td>
+                                        <td>Tokyo</td>
+                                        <td>63</td>
+                                        <td class="td-center">Franck L.</td>
+                                        <td class="td-center"><div class="status-active"></div></td>
+                                        <td class="td-center">12/05/2019</td>
+                                        <td>
+                                            <div class="row-action">
+                                                <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                                <button class="button-action"><i class="fas fa-trash"></i></button>
+                                                <button class="button-action"><i class="fas fa-envelope"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ashton Cox</td>
+                                        <td>Junior Technical Author</td>
+                                        <td>San Francisco</td>
+                                        <td>66</td>
+                                        <td class="td-center">Franck L.</td>
+                                        <td class="td-center"><div class="status-offline"></div></td>
+                                        <td class="td-center">12/05/2019</td>
+                                        <td>
+                                            <div class="row-action">
+                                                <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                                <button class="button-action"><i class="fas fa-trash"></i></button>
+                                                <button class="button-action"><i class="fas fa-envelope"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cedric Kelly</td>
+                                        <td>Senior Javascript Developer</td>
+                                        <td>Edinburgh</td>
+                                        <td>22</td>
+                                        <td class="td-center">Franck L.</td>
+                                        <td class="td-center"><div class="status-active"></div></td>
+                                        <td class="td-center">12/05/2019</td>
+                                        <td>
+                                            <div class="row-action">
+                                                <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                                <button class="button-action"><i class="fas fa-trash"></i></button>
+                                                <button class="button-action"><i class="fas fa-envelope"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Airi Satou</td>
+                                        <td>Accountant</td>
+                                        <td>Tokyo</td>
+                                        <td>33</td>
+                                        <td class="td-center">Franck L.</td>
+                                        <td class="td-center"><div class="status-active"></div></td>
+                                        <td class="td-center">12/05/2019</td>
+                                        <td>
+                                            <div class="row-action">
+                                                <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                                <button class="button-action"><i class="fas fa-trash"></i></button>
+                                                <button class="button-action"><i class="fas fa-envelope"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Brielle Williamson</td>
+                                        <td>Integration Specialist</td>
+                                        <td>New York</td>
+                                        <td>61</td>
+                                        <td class="td-center">Franck L.</td>
+                                        <td class="td-center"><div class="status-offline"></div></td>
+                                        <td class="td-center">12/05/2019</td>
+                                        <td>
+                                            <div class="row-action">
+                                                <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                                <button class="button-action"><i class="fas fa-trash"></i></button>
+                                                <button class="button-action"><i class="fas fa-envelope"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Herrod Chandler</td>
+                                        <td>Sales Assistant</td>
+                                        <td>San Francisco</td>
+                                        <td>59</td>
+                                        <td class="td-center">Franck L.</td>
+                                        <td class="td-center"><div class="status-offline"></div></td>
+                                        <td class="td-center">12/05/2019</td>
+                                        <td>
+                                            <div class="row-action">
+                                                <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                                <button class="button-action"><i class="fas fa-trash"></i></button>
+                                                <button class="button-action"><i class="fas fa-envelope"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Rhona Davidson</td>
+                                        <td>Integration Specialist</td>
+                                        <td>Tokyo</td>
+                                        <td>55</td>
+                                        <td class="td-center">Franck L.</td>
+                                        <td class="td-center"><div class="status-active"></div></td>
+                                        <td class="td-center">12/05/2019</td>
+                                        <td>
+                                            <div class="row-action">
+                                                <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                                <button class="button-action"><i class="fas fa-trash"></i></button>
+                                                <button class="button-action"><i class="fas fa-envelope"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Colleen Hurst</td>
+                                        <td>Javascript Developer</td>
+                                        <td>San Francisco</td>
+                                        <td>39</td>
+                                        <td class="td-center">Franck L.</td>
+                                        <td class="td-center"><div class="status-active"></div></td>
+                                        <td class="td-center">12/05/2019</td>
+                                        <td>
+                                            <div class="row-action">
+                                                <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                                <button class="button-action"><i class="fas fa-trash"></i></button>
+                                                <button class="button-action"><i class="fas fa-envelope"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sonya Frost</td>
+                                        <td>Software Engineer</td>
+                                        <td>Edinburgh</td>
+                                        <td>23</td>
+                                        <td class="td-center">Franck L.</td>
+                                        <td class="td-center"><div class="status-active"></div></td>
+                                        <td class="td-center">12/05/2019</td>
+                                        <td>
+                                            <div class="row-action">
+                                                <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                                <button class="button-action"><i class="fas fa-trash"></i></button>
+                                                <button class="button-action"><i class="fas fa-envelope"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jena Gaines</td>
+                                        <td>Office Manager</td>
+                                        <td>London</td>
+                                        <td>30</td>
+                                        <td class="td-center">Franck L.</td>
+                                        <td class="td-center"><div class="status-offline"></div></td>
+                                        <td class="td-center">12/05/2019</td>
+                                        <td>
+                                            <div class="row-action">
+                                                <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                                <button class="button-action"><i class="fas fa-trash"></i></button>
+                                                <button class="button-action"><i class="fas fa-envelope"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Quinn Flynn</td>
+                                        <td>Support Lead</td>
+                                        <td>Edinburgh</td>
+                                        <td>22</td>
+                                        <td class="td-center">Franck L.</td>
+                                        <td class="td-center"><div class="status-offline"></div></td>
+                                        <td class="td-center">12/05/2019</td>
+                                        <td>
+                                            <div class="row-action">
+                                                <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                                <button class="button-action"><i class="fas fa-trash"></i></button>
+                                                <button class="button-action"><i class="fas fa-envelope"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Charde Marshall</td>
+                                        <td>Regional Director</td>
+                                        <td>San Francisco</td>
+                                        <td>36</td>
+                                        <td class="td-center">Franck L.</td>
+                                        <td class="td-center"><div class="status-active"></div></td>
+                                        <td class="td-center">12/05/2019</td>
+                                        <td>
+                                            <div class="row-action">
+                                                <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                                <button class="button-action"><i class="fas fa-trash"></i></button>
+                                                <button class="button-action"><i class="fas fa-envelope"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Haley Kennedy</td>
+                                        <td>Senior Marketing Designer</td>
+                                        <td>London</td>
+                                        <td>43</td>
+                                        <td class="td-center">Franck L.</td>
+                                        <td class="td-center"><div class="status-offline"></div></td>
+                                        <td class="td-center">12/05/2019</td>
+                                        <td>
+                                            <div class="row-action">
+                                                <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                                <button class="button-action"><i class="fas fa-trash"></i></button>
+                                                <button class="button-action"><i class="fas fa-envelope"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tatyana Fitzpatrick</td>
+                                        <td>Regional Director</td>
+                                        <td>London</td>
+                                        <td>19</td>
+                                        <td class="td-center">Franck L.</td>
+                                        <td class="td-center"><div class="status-offline"></div></td>
+                                        <td class="td-center">12/05/2019</td>
+                                        <td>
+                                            <div class="row-action">
+                                                <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                                <button class="button-action"><i class="fas fa-trash"></i></button>
+                                                <button class="button-action"><i class="fas fa-envelope"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Michael Silva</td>
+                                        <td>Marketing Designer</td>
+                                        <td>London</td>
+                                        <td>66</td>
+                                        <td class="td-center">Franck L.</td>
+                                        <td class="td-center"><div class="status-offline"></div></td>
+                                        <td class="td-center">12/05/2019</td>
+                                        <td>
+                                            <div class="row-action">
+                                                <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                                <button class="button-action"><i class="fas fa-trash"></i></button>
+                                                <button class="button-action"><i class="fas fa-envelope"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Brenden Wagner</td>
+                                        <td>Software Engineer</td>
+                                        <td>San Francisco</td>
+                                        <td>28</td>
+                                        <td class="td-center">Franck L.</td>
+                                        <td class="td-center"><div class="status-offline"></div></td>
+                                        <td class="td-center">12/05/2019</td>
+                                        <td>
+                                            <div class="row-action">
+                                                <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                                <button class="button-action"><i class="fas fa-trash"></i></button>
+                                                <button class="button-action"><i class="fas fa-envelope"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>Fiona Green</td>
+                                        <td>Chief Operating Officer (COO)</td>
+                                        <td>San Francisco</td>
+                                        <td>48</td>
+                                        <td class="td-center">Franck L.</td>
+                                        <td class="td-center"><div class="status-offline"></div></td>
+                                        <td class="td-center">12/05/2019</td>
+                                        <td>
+                                            <div class="row-action">
+                                                <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                                <button class="button-action"><i class="fas fa-trash"></i></button>
+                                                <button class="button-action"><i class="fas fa-envelope"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>Shou Itou</td>
+                                        <td>Regional Marketing</td>
+                                        <td>Tokyo</td>
+                                        <td>20</td>
+                                        <td class="td-center">Franck L.</td>
+                                        <td class="td-center"><div class="status-offline"></div></td>
+                                        <td class="td-center">12/05/2019</td>
+                                        <td>
+                                            <div class="row-action">
+                                                <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                                <button class="button-action"><i class="fas fa-trash"></i></button>
+                                                <button class="button-action"><i class="fas fa-envelope"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>Michelle House</td>
+                                        <td>Integration Specialist</td>
+                                        <td>Sidney</td>
+                                        <td>37</td>
+                                        <td class="td-center">Franck L.</td>
+                                        <td class="td-center"><div class="status-offline"></div></td>
+                                        <td class="td-center">12/05/2019</td>
+                                        <td>
+                                            <div class="row-action">
+                                                <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                                <button class="button-action"><i class="fas fa-trash"></i></button>
+                                                <button class="button-action"><i class="fas fa-envelope"></i></button>
+                                            </div>
+                                        </td>
+                                        
+                                        <tr>
+                                            <td>Suki Burks</td>
+                                            <td>Developer</td>
+                                            <td>London</td>
+                                            <td>53</td>
+                                            <td class="td-center">Franck L.</td>
+                                            <td class="td-center"><div class="status-active"></div></td>
+                                            <td class="td-center">12/05/2019</td>
+                                            <td>
+                                                <div class="row-action">
+                                                    <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                                    <button class="button-action"><i class="fas fa-trash"></i></button>
+                                                    <button class="button-action"><i class="fas fa-envelope"></i></button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td>Prescott Bartlett</td>
+                                            <td>Technical Author</td>
+                                            <td>London</td>
+                                            <td>27</td>
+                                            <td class="td-center">Franck L.</td>
+                                            <td class="td-center"><div class="status-offline"></div></td>
+                                            <td class="td-center">12/05/2019</td>
+                                            <td>
+                                                <div class="row-action">
+                                                    <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                                    <button class="button-action"><i class="fas fa-trash"></i></button>
+                                                    <button class="button-action"><i class="fas fa-envelope"></i></button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td>Gavin Cortez</td>
+                                            <td>Team Leader</td>
+                                            <td>San Francisco</td>
+                                            <td>22</td>
+                                            <td class="td-center">12/05/2019</td>
+                                            <td class="td-center"><div class="status-active"></div></td>
+                                            <td class="td-center">12/05/2019</td>
+                                            <td>
+                                                <div class="row-action">
+                                                    <button class="button-action"><i class="far fa-times-circle"></i></button>
+                                                    <button class="button-action"><i class="fas fa-trash"></i></button>
+                                                    <button class="button-action"><i class="fas fa-envelope"></i></button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                
+                            </div>
+                        </section>
+                        
+                        <section id="parameter">
+                            
+                        </section>
+                        
+                        <!-- Hamburger Menu JavaScript -->
+                        <script src="../assets/js/hamburger-menu.js"></script>
+                        
+                        <!-- Pagination Table -->
+                        <script src="../assets/js/jquery-3.3.1.min.js"></script>
+                        <script src="../assets/js/jquery.dataTables.min.js"></script>
+                        <script src="../assets/js/dataTables.bootstrap4.min.js"></script>
+                        <script src="../assets/js/responsive.bootstrap4.min.js"></script>
+                        <script src="../components/pagination-table/pagination-table.js"></script>
+                        
+                    </body>
+                    
+                    </html>

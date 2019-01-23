@@ -1,0 +1,271 @@
+section#profile-administrator {
+	margin-left: 140px;
+	margin-top: 135px;
+	height: auto;
+	width: auto;
+	display: inline-block;
+}
+
+.main-profile-administrator {
+	padding-left: 60px;
+	width: 1115px;
+	height: auto;
+	background-color: #ffffff;
+	display: inline-block;
+	padding-bottom: 20px;
+	border-radius: 10px;
+}
+
+.circle-administrator {
+	width: 130px;
+	height: 130px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	margin-top: 50px;
+	margin-left: 20px;
+}
+
+.name-administrator {
+	font-family: FD_Regular;
+	font-size: 32px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: #000000;
+	padding-top: 60px;
+	padding-left: 30px;
+}
+
+.update-profile {
+	position: absolute;
+	top: 485px;
+	left: 380px;
+}
+
+.admin-discussion {
+	border-radius: 10px;
+	margin-left: 350px;
+	padding-top: 0px;
+	margin-top: 20px;
+	background-color: lightgrey;
+	width: 316px;
+	height: 200px;
+	display: inline-block;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-right: 20px;
+}
+
+.board-title {
+	font-family: FD_Regular;
+	font-size: 23px;
+	text-align: center;
+}
+
+.board {
+	font-family: GothamHTF;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+
+section#admin-discussion {
+	margin-left: 140px;
+	margin-top: 30px;
+	height: auto;
+	width: auto;
+	display: inline-block;
+}
+
+.main-admin-discussion {
+	width: 1115px;
+	margin-bottom: 30px;
+}
+
+.hr-discussion {
+	background-color: white !important;
+	margin-bottom: 40px;
+}
+
+.table-discussion {
+	background-color: white;
+	border-radius: 10px;
+	width: auto;
+}
+
+.main-search-discussion {
+    background-color: white;
+    width: 1115px;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    display: inline-block;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.filter-title {
+    font-family: FD_Regular;
+    font-size: 23px;
+}
+
+.label-search {
+    font-family: GothamHTF;
+    font-size: 14px;
+    margin-right: 30px;
+}
+
+.label-search-2 {
+    font-family: GothamHTF;
+    font-size: 14px;
+    margin-right: 25px;
+}
+
+.label-search-3 {
+    font-family: GothamHTF;
+    font-size: 14px;
+    margin-right: 40px;
+}
+
+.label-search-4 {
+    font-family: GothamHTF;
+    font-size: 14px;
+    margin-right: 87px;
+}
+
+.dropdown-search {
+    display: flex;
+    margin-left: 30px;
+}
+
+.dropdown-search-2 {
+    display: flex;
+    margin-left: 288px;
+}
+
+.dropdown-search-3 {
+    display: flex;
+    margin-left: 270px;
+}
+.dropdown-search-4 {
+    display: flex;
+    margin-left: 270px;
+}
+
+.form-drop {
+    margin-bottom: 30px;
+}
+
+.hr-filter {
+    color: black;
+    margin-bottom: 30px;
+}
+
+section#admin-ambassador {
+    margin-left: 140px;
+	margin-top: 30px;
+	height: auto;
+	width: auto;
+	display: inline-block;
+}
+
+section#admin-candidate {
+    margin-left: 140px;
+	margin-top: 30px;
+	height: auto;
+	width: auto;
+	display: inline-block;
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1430px) {
+	section#profile-administrator {
+		margin-left: 20px;
+	}
+	.main-profile-administrator {
+		width: 985px;
+	}
+	.admin-discussion {
+		margin-left: 215px;
+	}
+	.update-profile {
+		top: 370px;
+		left: 255px;
+	}
+    
+	section#admin-discussion {
+		margin-left: 20px;
+    }
+    .main-admin-discussion {
+        width: 980px;
+    }
+    .main-search-discussion {
+        width: 980px;
+    }
+    section#admin-ambassador {
+        margin-left: 20px;
+    }
+    .dropdown-search-2 {
+        margin-left: 180px;
+    }
+    .dropdown-search-3 {
+        margin-left: 162px;
+    }
+    .dropdown-search-4 {
+        margin-left: 163px;
+    }
+    section#admin-candidate {
+        margin-left: 20px;
+    }    
+}
+
+@media screen and (min-width: 1500px) and (max-width: 1700px) {
+	.main-profile-administrator {
+		width: 1260px;
+	}
+	.admin-discussion {
+		margin-left: 470px;
+    }
+    .main-admin-discussion {
+        width: 1260px;
+    }
+    .main-search-discussion {
+        width: 1260px;
+    }
+    .dropdown-search-2 {
+        margin-left: 413px;
+    }
+    .dropdown-search-4 {
+        margin-left: 395px;
+    }
+    .dropdown-search-3 {
+        margin-left: 395px;
+    }
+}
+
+@media screen and (min-width: 1700px) {
+	.main-profile-administrator {
+		width: 1580px;
+	}
+	.admin-discussion {
+		margin-left: 775px;
+    }
+    .main-admin-discussion {
+        width: 1580px;
+    }
+    .main-search-discussion {
+        width: 1580px;
+    }
+    .dropdown-search-2 {
+        margin-left: 718px;
+    }
+    .dropdown-search-4 {
+        margin-left: 700px;
+    }
+    .dropdown-search-3 {
+        margin-left: 700px;
+    }
+}

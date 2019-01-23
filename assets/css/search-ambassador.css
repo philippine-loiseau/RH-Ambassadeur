@@ -95,10 +95,16 @@ section#sidebar-ambassador {
     margin-bottom: 10px;
 }
 
+.sidebar-description {
+    font-family: GothamHTF;
+    font-size: 14px;
+}
 
 
-
-
+section#search-responses {
+    margin-top: 135px;
+    margin-left: 140px;
+}
 
 
 
@@ -310,14 +316,14 @@ section#sidebar-ambassador {
     .main-search-ambassador {
         position: absolute;
         margin-top: 80px;
-        width: 1335px;
+        width: 1255px;
     }
     
     section#sidebar-ambassador {
         margin-top: 80px;
-        width: 442px;
         position: absolute;
-        margin-left: 1400px;
+        margin-left: 1300px;
+        width: 330px;
     }
     
 }

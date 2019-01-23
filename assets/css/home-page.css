@@ -1,7 +1,7 @@
 @import url('../css/fonts.css');
 
 body {
-	background-color: #333333
+	background-color: #333333;
 }
 
 section#background {
@@ -144,15 +144,24 @@ div#circle {
 	}
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 430px) {
 	.card {
 		margin-left: 40px;
+	}
+	div#circle {
+		width: 200px;
+		height: 200px;
 	}
 }
 
 @media screen and (min-width: 430px) and (max-width: 768px) {
 	.card {
-		margin: 40px 40px 40px 200px;
+		margin: 31px -12px 32px 29px;
+		width: 229px;
+	}
+	div#circle {
+		width: 200px;
+		height: 200px;
 	}
 }
 
@@ -507,7 +516,7 @@ a#padlock {
 
 div#social-media {
 	padding-top: 30px !important;
-	text-align: center
+	text-align: center;
 }
 
 .copyright {
@@ -540,17 +549,16 @@ p#legal {
 
 /* MEDIA QUERIES SECTION FOOTER */
 
-
-@media screen and (max-width: 425px){
+@media screen and (max-width: 425px) {
 	section#footer {
-		padding-left: 25px
+		padding-left: 25px;
 	}
 	div#footer-row {
 		margin-right: 0px !important;
-		margin-left: 0px !important
+		margin-left: 0px !important;
 	}
 	p#find-us {
-		font-size: 18px
+		font-size: 18px;
 	}
 	.marque-bretagne {
 		display: none;

@@ -221,16 +221,6 @@ section#discussion-candidate {
     border-radius: 10px;
 }
 
-.card-discussion-private {
-    background-color: white;
-    height: auto;
-    width: auto;
-    margin-top: 50px;
-    padding: 0px 20px 1px 20px;
-    border-radius: 10px;
-    border: 1px dashed;
-}
-
 .niji-daily {
     font-family: GothamHTF;
     font-size: 12px;
@@ -301,7 +291,7 @@ section#discussion-candidate {
 	width: 172px;
 	height: 40px;
 	margin-left: 875px;
-	background-color: grey;
+	background-color: firebrick;
 	font-family: GothamHTF;
 	font-size: 12px;
 	font-weight: bold;
