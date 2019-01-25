@@ -1,0 +1,15 @@
+section#footer { 
+    background: transparent url('../img/map.png') no-repeat;
+    width: auto;
+    height: auto;
+}
+
+.footer-blue {
+    width: auto;
+    height: 80px;
+    background-color: #0066ff;
+}
+
+.french-map {
+    
+}

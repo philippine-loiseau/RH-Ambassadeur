@@ -20,13 +20,18 @@
     <!-- Bootstrap core CSS -->
     <link href="../assets/css/bootstrap/bootstrap.min.css" rel="stylesheet" />
     
+    <!-- OwlCarousel core CSS -->
+    <link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../assets/css/owl.theme.default.css">
+    
     <!-- Custom styles -->
     <link href="../assets/css/home-page.css" rel="stylesheet" />
+    <link href="../assets/css/footer.css" rel="stylesheet" />
     <link href="../assets/css/hamburger-menu.css" rel="stylesheet" />
     <link href="../assets/css/styles.css" rel="stylesheet" />
     <link href="../assets/css/fonts.css" rel="stylesheet" />
 </head>
-<section id="background">
+<div id="background">
     <header>
         <a href="#" id="logo-hamburger-menu"></a>
         <div id="hamburger">
@@ -89,204 +94,146 @@
             </p>
             <div class="center"><button id="ambassador-discovery">Découvrir les ambassadeurs</button></div>
         </section>
-    </section>
-    
-    <section id="carousel"><h2>Les ambassadeurs populaires</h2>
-        
-    </section>
-    
-    <section id="theme">
-        <h2>Thèmes des discussions</h2>
-        <article>
-            <div class="row" id="theme">
-                <div class="card" id="advice">
-                    <div id="circle">Conseils de <br />candidature</div>
-                </div>
-                <div class="card" id="recruitement">
-                    <div id="circle">
-                        Processus de <br />
-                        recrutement
+        <section id="carousel"><h2>Les ambassadeurs populaires</h2>    
+            <div class="owl-carousel">
+                <div class="card-carousel">
+                    <img id="popular-ambassador" class="circle-popular-ambassador" src="" alt="">
+                    <p class="name-popular-ambassador">Benoit B.</p>
+                    <hr class="hr-popular-ambassador">
+                    <p class="job-ambassador">Ingénieur commercial</p>
+                    <p class="office">Paris</p>
+                    <p class="view-profile">Voir le profil <span id="arrow-right"> <i class="fas fa-long-arrow-alt-right"></i></p>
                     </div>
-                </div>
-                <div class="card" id="daily">
-                    <div id="circle">Niji au <br />quotidien</div>
-                </div>
-            </div>
-        </article>
-    </section>
-    
-    <section id="debate">
-        <h2>Les discussions populaires</h2>
-        <article>
-            <div class="row" id="debate">
-                <div class="card-debate">
-                    <div class="card-head">Niji au quotidien</div>
-                    <div class="card-question">Quelles sont les formations proposées par Niji ?</div>
-                    <div class="card-posted">Posté le 24/09/18 par <span id="bold">Anaïs G.</span></div>
-                    <div class="card-answer">
-                        Voir les 8 réponses
-                        <span id="arrow-right"> <i class="fas fa-long-arrow-alt-right"></i> </span>
-                    </div>
-                </div>
-                <div class="card-debate">
-                    <div class="card-head">Niji au quotidien</div>
-                    <div class="card-question">
-                        Y-a-t-il de la mobilité entre les différentes implantations de Niji ?
-                    </div>
-                    <div class="card-posted">Posté le 24/09/18 par <span id="bold">Anaïs G.</span></div>
-                    <div class="card-answer">
-                        Voir les 8 réponses
-                        <span id="arrow-right"> <i class="fas fa-long-arrow-alt-right"></i> </span>
-                    </div>
-                </div>
-                <div class="card-debate">
-                    <div class="card-head">Niji au quotidien</div>
-                    <div class="card-question">Quels sont les avantages sociaux ?</div>
-                    <div class="card-posted">Posté le 24/09/18 par <span id="bold">Anaïs G.</span></div>
-                    <div class="card-answer">
-                        Voir les 8 réponses
-                        <span id="arrow-right"> <i class="fas fa-long-arrow-alt-right"></i> </span>
-                    </div>
-                </div>
-                <div class="card-debate">
-                    <div class="card-head">Niji au quotidien</div>
-                    <div class="card-question">Quelles activités sont proposées par le CE ?</div>
-                    <div class="card-posted">Posté le 24/09/18 par <span id="bold">Anaïs G.</span></div>
-                    <div class="card-answer">
-                        Voir les 8 réponses
-                        <span id="arrow-right"> <i class="fas fa-long-arrow-alt-right"></i> </span>
-                    </div>
-                </div>
-            </div>
-        </article>
-    </section>
-    
-    <section id="footer" class="col-xs-12 col-md-12 col-lg-12">
-        <div id="footer-row" class="container-fluid row">
-            <div id="footer-column" class="column col-6">
-                <p id="find-us">Retrouvez nous :</p>
-                <div>
-                </div>
-                <div class="row">
-                    <div class="panel panel-default col-sm-4 col-md-4 col-lg-4 col-xs-12">
-                        <div class="panel-heading">PARIS</div>
-                        <div class="panel-body">
-                            <div class="infos">
-                                <p id="address">14 bd des Frères Voisin <br>92 130 Issy-les-Moulineaux</p>
-                            </div>
+                    <div class="card-carousel">
+                        <img id="popular-ambassador" class="circle-popular-ambassador" src="" alt="">
+                        <p class="name-popular-ambassador">Benoit B.</p>
+                        <hr class="hr-popular-ambassador">
+                        <p class="job-ambassador">Ingénieur commercial</p>
+                        <p class="office">Paris</p>
+                        <p class="view-profile">Voir le profil <span id="arrow-right"> <i class="fas fa-long-arrow-alt-right"></i></p>
                         </div>
-                        <div class="panel-footer"><button type="button" id="map">Voir le plan d’accès</button></div>
-                    </div>
-                    <div class="panel panel-default col-sm-4 col-md-4 col-lg-4 col-xs-12">
-                        <div class="panel-heading">RENNES</div>
-                        <div class="panel-body">
-                            <div class="infos">
-                                <p id="address">38 ter rue de Rennes<br>35 510 Cesson-Sévigné</p>
+                        <div class="card-carousel">
+                            <img id="popular-ambassador" class="circle-popular-ambassador" src="" alt="">
+                            <p class="name-popular-ambassador">Benoit B.</p>
+                            <hr class="hr-popular-ambassador">
+                            <p class="job-ambassador">Ingénieur commercial</p>
+                            <p class="office">Paris</p>
+                            <p class="view-profile">Voir le profil <span id="arrow-right"> <i class="fas fa-long-arrow-alt-right"></i></p>
                             </div>
-                        </div>
-                        <div class="panel-footer"><button type="button" id="map">Voir le plan d’accès</button></div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="panel panel-default col-sm-4 col-md-4 col-lg-4 col-xs-12">
-                        <div class="panel-heading">LILLE</div>
-                        <div class="panel-body">
-                            <div class="infos">
-                                <p id="address">Euratechnologie <br>165 av. de Bretagne <br>59 000 Lille</p>
+                            <div class="card-carousel">
+                                <img id="popular-ambassador" class="circle-popular-ambassador" src="" alt="">
+                                <p class="name-popular-ambassador">Benoit B.</p>
+                                <hr class="hr-popular-ambassador">
+                                <p class="job-ambassador">Ingénieur commercial</p>
+                                <p class="office">Paris</p>
+                                <p class="view-profile">Voir le profil <span id="arrow-right"> <i class="fas fa-long-arrow-alt-right"></i></p>
+                                </div>
+                                <div class="card-carousel">
+                                    <img id="popular-ambassador" class="circle-popular-ambassador" src="" alt="">
+                                    <p class="name-popular-ambassador">Benoit B.</p>
+                                    <hr class="hr-popular-ambassador">
+                                    <p class="job-ambassador">Ingénieur commercial</p>
+                                    <p class="office">Paris</p>
+                                    <p class="view-profile">Voir le profil <span id="arrow-right"> <i class="fas fa-long-arrow-alt-right"></i></p>
+                                    </div>
+                                    <div class="card-carousel">
+                                        <img id="popular-ambassador" class="circle-popular-ambassador" src="" alt="">
+                                        <p class="name-popular-ambassador">Benoit B.</p>
+                                        <hr class="hr-popular-ambassador">
+                                        <p class="job-ambassador">Ingénieur commercial</p>
+                                        <p class="office">Paris</p>
+                                        <p class="view-profile">Voir le profil <span id="arrow-right"> <i class="fas fa-long-arrow-alt-right"></i></p>
+                                        </div>
+                                    </div>
+                                </section>
+                                
                             </div>
-                        </div>
-                        <div class="panel-footer"><button type="button" id="map">Voir le plan d’accès</button></div>
-                    </div>
-                    <div class="panel panel-default col-sm-4 col-md-4 col-lg-4 col-xs-12">
-                        <div class="panel-heading">NANTES</div>
-                        <div class="panel-body">
-                            <div class="infos">
-                                <p id="address">11 rue Arthur III <br>44 200 Nantes</p>
-                            </div>
-                        </div>
-                        <div class="panel-footer"><button type="button" id="map">Voir le plan d’accès</button></div>
-                    </div>  
-                </div>
-                <div class="row">
-                    <div class="panel panel-default col-sm-4 col-md-4 col-lg-4 col-xs-12">
-                        <div class="panel-heading">LYON</div>
-                        <div class="panel-body">
-                            <div class="infos">
-                                <p id="address">Les Douanes<br>45 quai Rambaud <br>69 002 Lyon</p>
-                            </div>
-                        </div>
-                        <div class="panel-footer"><button type="button" id="map">Voir le plan d’accès</button></div>
-                    </div>
-                    <div class="panel panel-default col-sm-4 col-md-4 col-lg-4 col-xs-12">
-                        <div class="panel-heading">BORDEAUX</div>
-                        <div class="panel-body">
-                            <div class="infos">
-                                <p id="address">Bassin à Flot N°1 BAT G4 <br>Rue Lucien Faure <br>33 000 Bordeaux</p>
-                            </div>
-                        </div>
-                        <div class="panel-footer"><button type="button" id="map">Voir le plan d’accès</button></div>
-                    </div>
-                </div>
-            </div>
-            <div class="column col-6">
-                <p id="find-us">Suivez nous :</p>
-                <div class="col-sm-4 col-md-6 col-xs-12">
-                    <div class="column" id="social-media">
-                        <div class="row">
-                            <div class="col-md-4 col-lg-3 col-xs-2">
-                                <a id="facebook" class="social-media" href="http://fr.slideshare.net/Niji_Digital" target="_blank" title="Slideshare Niji">&nbsp;</a>
-                            </div>
-                            <div class="col-md-4 col-lg-3 col-xs-2">
-                                <a id="twitter" class="social-media" href="https://twitter.com/Niji_Digital" target="_blank" title="Twitter Niji">&nbsp;</a>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4 col-lg-3 col-xs-2">
-                                <a id="linkedin" class="social-media" href="https://www.linkedin.com/company/niji" target="_blank" title="Linkedin Niji">&nbsp;</a>
-                            </div>
-                            <div class="col-md-4 col-lg-3 col-xs-2">
-                                <a id="youtube" class="social-media" href="https://www.youtube.com/user/Nijivideo" target="_blank" title="Youtube Niji">&nbsp;</a>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4 col-lg-3 col-xs-2">
-                                <a id="slideshare" class="social-media" href="http://fr.slideshare.net/Niji_Digital" target="_blank" title="Slideshare Niji">&nbsp;</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column">
-                    <p id="find-us">Contactez nous :</p>
-                    <div class="row col-md-5 col-xs-12 contact">
-                        <a id="mail" class="social-media" title="Contact Niji">Contactez-nous</a>
-                    </div>
-                    <!-- <div class="col-md-2 col-xs-12 contact">
-                        <a id="padlock" class="social-media" title="Confidentialité">Confidentialité</a>
-                    </div> -->
-                </div>    
-            </div>
-            
-            
-        </div>
-        <div class="">
-            <div class="col-md-12 col-xs-12 copyright">
-                <p id="legal">
-                    <a id="plan" href="" title="Plan du site">Plan du site</a>
-                    &nbsp;|&nbsp;
-                    <a id="plan" href="" title="Mentions Légales">Mentions Légales</a>
-                    
-                    <span class="copyrightText">©Niji 2018<span class="points-niji"></span></span>
-                </p>
-            </div>
-        </div>
-        
-    </section>
-    
-    <!-- Bootstrap core JavaScript -->
-    <script src="../assets/js/bootstrap/bootstrap.min.js"></script>
-    
-    <!-- Hamburger Menu JavaScript -->
-    <script src="../assets/js/hamburger-menu.js"></script>
-    
-</body>
-</html>
+                            <section id="theme">
+                                <h2>Thèmes des discussions</h2>
+                                <article>
+                                    <div class="row" id="theme">
+                                        <div class="card" id="advice">
+                                            <div id="circle">Conseils de <br />candidature</div>
+                                        </div>
+                                        <div class="card" id="recruitement">
+                                            <div id="circle">
+                                                Processus de <br />
+                                                recrutement
+                                            </div>
+                                        </div>
+                                        <div class="card" id="daily">
+                                            <div id="circle">Niji au <br />quotidien</div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </section>
+                            
+                            <section id="debate">
+                                <h2>Les discussions populaires</h2>
+                                <article>
+                                    <div class="row" id="debate">
+                                        <div class="card-debate">
+                                            <div class="card-head">Niji au quotidien</div>
+                                            <div class="card-question">Quelles sont les formations proposées par Niji ?</div>
+                                            <div class="card-posted">Posté le 24/09/18 par <span id="bold">Anaïs G.</span></div>
+                                            <div class="card-answer">
+                                                Voir les 8 réponses
+                                                <span id="arrow-right"> <i class="fas fa-long-arrow-alt-right"></i> </span>
+                                            </div>
+                                        </div>
+                                        <div class="card-debate">
+                                            <div class="card-head">Niji au quotidien</div>
+                                            <div class="card-question">
+                                                Y-a-t-il de la mobilité entre les différentes implantations de Niji ?
+                                            </div>
+                                            <div class="card-posted">Posté le 24/09/18 par <span id="bold">Anaïs G.</span></div>
+                                            <div class="card-answer">
+                                                Voir les 8 réponses
+                                                <span id="arrow-right"> <i class="fas fa-long-arrow-alt-right"></i> </span>
+                                            </div>
+                                        </div>
+                                        <div class="card-debate">
+                                            <div class="card-head">Niji au quotidien</div>
+                                            <div class="card-question">Quels sont les avantages sociaux ?</div>
+                                            <div class="card-posted">Posté le 24/09/18 par <span id="bold">Anaïs G.</span></div>
+                                            <div class="card-answer">
+                                                Voir les 8 réponses
+                                                <span id="arrow-right"> <i class="fas fa-long-arrow-alt-right"></i> </span>
+                                            </div>
+                                        </div>
+                                        <div class="card-debate">
+                                            <div class="card-head">Niji au quotidien</div>
+                                            <div class="card-question">Quelles activités sont proposées par le CE ?</div>
+                                            <div class="card-posted">Posté le 24/09/18 par <span id="bold">Anaïs G.</span></div>
+                                            <div class="card-answer">
+                                                Voir les 8 réponses
+                                                <span id="arrow-right"> <i class="fas fa-long-arrow-alt-right"></i> </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </section>
+                            
+                            <section id="footer">
+
+                                <div class="french-map">
+
+                                </div>
+                                
+                                <div class="footer-blue"></div>
+                            </section>
+                            
+                            <!-- Bootstrap core JavaScript -->
+                            <script src="../assets/js/bootstrap/bootstrap.min.js"></script>
+                            
+                            <!-- Hamburger Menu JavaScript -->
+                            <script src="../assets/js/hamburger-menu.js"></script>
+                            
+                            <!-- OwlCarousel JavaScript -->
+                            <script src="../assets/js/jquery-ui-1.12.1/external/jquery/jquery.js"></script>
+                            <script src="../assets/js/owl.carousel.min.js"></script>
+                            <script src="../assets/js/carousel.js"></script>
+                            
+                        </body>
+                        </html>
+                        

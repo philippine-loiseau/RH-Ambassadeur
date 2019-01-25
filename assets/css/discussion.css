@@ -220,7 +220,7 @@ div#row-rectangle {
 		flex-direction: column;
 	}
 	section#answer {
-		margin-left: 30px;
+		margin-left: 15px;
 	}
 	.answer-rectangle {
 		display: none;
@@ -251,7 +251,7 @@ div#row-rectangle {
 
 @media screen and (min-width: 330px) and (max-width: 380px) {
 	section#answer {
-		margin-left: 30px;
+		margin-left: 15px;
 	}
 	.answer-rectangle {
 		display: none;
@@ -281,7 +281,7 @@ div#row-rectangle {
 
 @media screen and (min-width: 385px) and (max-width: 430px) {
 	section#answer {
-		margin-left: 30px;
+		margin-left: 15px;
 	}
 	.answer-rectangle {
 		display: none;
@@ -311,7 +311,7 @@ div#row-rectangle {
 
 @media screen and (min-width: 480px) and (max-width: 770px) { 
 	section#answer {
-		margin-left: 35px;
+	    margin-left: 20px;
 	}
 	.main-answer {
 		padding-left: 40px;
@@ -322,7 +322,7 @@ div#row-rectangle {
 
 @media screen and (min-width: 780px) and (max-width: 1024px) {
 	section#answer {
-		margin-left: 35px;
+		margin-left: 25px;
 	}
 	.main-answer {
 		padding-left: 60px;
@@ -427,7 +427,7 @@ img#calendar {
 		margin-right: 0px !important;
 	}
 	section#question {
-		margin-left: 30px;
+		margin-left: 15px;
 		margin-top: 0px;
 	}
 	.main {
@@ -462,7 +462,7 @@ img#calendar {
 		margin-right: 15px !important;
 	}
 	section#question {
-		margin-left: 30px;
+	    margin-left: 15px;
 		margin-top: 0px;
 		justify-content: center;
 	}
@@ -499,7 +499,7 @@ img#calendar {
 		margin-right: 0px !important;
 	}
 	section#question {
-		margin-left: 35px;
+		margin-left: 20px;
 		margin-top: 40px;
 	}
 	.main {
@@ -526,7 +526,7 @@ img#calendar {
 		margin-right: 0px !important;
 	}
 	section#question {
-		margin-left: 35px;
+		margin-left: 25px;
 		margin-top: 40px;
 	}
 	section#sidebar-one {
@@ -610,7 +610,7 @@ section#reply {
 
 @media screen and (max-width: 320px) {
 	section#reply {
-		margin-left: 15px;
+	    margin-left: 15px;
 	}
 	.main-reply {
 		width: 292px;
@@ -685,6 +685,9 @@ section#reply {
 }
 
 @media screen and (min-width: 780px) and (max-width: 1024px) { 
+	section#reply {
+	    margin-left: 25px;
+	}
 	.main-reply {
 		padding-left: 60px;
 		width: 975px;
@@ -700,6 +703,9 @@ section#reply {
 	}
 	.waiting-response {
 		margin-left: 600px;
+	}
+	section#reply {
+		margin-left: 140px;
 	}
 }
 
@@ -719,12 +725,15 @@ section#reply {
 	.waiting-response {
 		margin-left: 1060px;
 	}
+	section#reply {
+		margin-left: 140px;
+	}
 }
 
 /* SECTION TEXT AREA */
 
 section#area {
-	margin-left: 125px;
+	margin-left: 140px;
 	margin-top: 36px;
 }
 
@@ -1032,7 +1041,7 @@ div#row-check {
 /* SECTION AMBASSADOR SEARCH */
 
 section#ambassador-search {
-	margin-left: 125px;
+	margin-left: 140px;
 	margin-top: 36px;
 }
 
@@ -1336,7 +1345,7 @@ label#function, label#office {
 /* SECTION TRANSFER */
 
 section#transfer {
-	margin-left: 125px;
+	margin-left: 140px;
 	margin-top: 36px;
 	margin-bottom: 60px;
 }

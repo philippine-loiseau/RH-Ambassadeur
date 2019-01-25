@@ -17,5 +17,5 @@ function toggle(anId)
 }
 
 window.onload = function () { 
-    Hide("view-form");	
+    Hide("view-form");
 };

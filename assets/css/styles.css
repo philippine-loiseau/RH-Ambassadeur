@@ -1,3 +1,13 @@
+body {
+	background-color: #333333;
+}
+
+div#background {
+	background: url('../img/background.png') no-repeat;
+	background-size: cover;
+}
+
+
 .center {
     text-align: center;
 }

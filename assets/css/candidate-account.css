@@ -10,6 +10,7 @@ section#profile-candidate  {
 
 .main-profile-candidate {
 	padding-left: 60px;
+	border-radius: 10px;
 	width: 1115px;
 	height: auto;
 	background-color: #ffffff;
@@ -19,6 +20,8 @@ section#profile-candidate  {
 
 .main-profile-candidate-visible {
 	padding-left: 60px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
 	width: 1115px;
 	height: auto;
 	background-color: #ffffff;
@@ -61,7 +64,9 @@ section#profile-candidate  {
 	background-color: lightgrey;
 	display: inline-block;
 	padding-bottom: 20px;
+	border-radius: inherit;
 }
+
 
 .input-fields {
 	width: 800px !important;
@@ -81,7 +86,13 @@ section#profile-candidate  {
 	height: auto;
     background-color: white;
     padding-bottom: 20px;
-    margin-left: 140px;
+	margin-left: 140px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.view-form-hidden {
+	display: none;
 }
 
 .hidden-form {
@@ -91,7 +102,9 @@ section#profile-candidate  {
 	margin-right: 65px;
 	margin-left: 60px;
     padding-right: 30px;
-    padding-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
 }
 
 .label-ask {

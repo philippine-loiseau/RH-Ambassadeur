@@ -6,7 +6,7 @@
 	position: relative;
 	width: 240px;
 	height: 40px;
-	font-family: GothamHTF;
+	font-family: Gotham;
 	font-size: 14px;
 	font-weight: 700;
 	font-style: normal;
@@ -18,6 +18,8 @@
     border:0px;
     outline:0px;
 }
+
+
 .stylish-dropdown:after {
 	content: "";
 	box-sizing: border-box;
